@@ -1,0 +1,211 @@
+html, body
+  width: 100%
+  height: 100%
+  
+::selection
+  background: darken($primary, 10%) /* WebKit/Blink Browsers */
+  
+::-moz-selection
+  background: darken($primary, 10%) /* Gecko Browsers */
+  
+body
+  background-color: $primary
+  position: relative
+  
+  .carousel
+    width: 100%
+    height: 100%
+    position: absolute
+  
+    .carousel-inner
+      width: 100%
+      height: 100%
+    
+      .item
+        width: 100%
+        height: 100%
+        background-size: cover
+        background-position: center center
+
+      .slider-1
+        background-image: url("../img/slider-1.jpg")
+        
+      .slider-2
+        background-image: url("../img/slider-2.jpg")
+        
+      .slider-3
+        background-image: url("../img/slider-3.jpg")
+        
+      .slider-4
+        background-image: url("../img/slider-4.jpg")
+        
+  .main-nav
+    padding-top: 25px
+        
+    .icon-bar
+      background-color: $primary
+      
+    .navbar-brand
+      height: auto
+      padding-left: 30px
+      
+    .navbar-collapse
+      padding-right: 15px
+      
+      .navbar-nav
+        
+        li
+          padding: 0 5px
+          
+          a
+            font-size: 14px
+            font-family: $font-main
+            color: rgba(255, 255, 255, 0.75)
+            text-transform: uppercase
+            padding: 5px 15px
+            margin-top: 10px
+            
+            &:focus
+              background-color: transparent
+            
+            &:hover
+              background-color: transparent
+              color: rgba(255, 255, 255, 1)
+            
+            @media screen and (min-width: 768px) and (max-width: 806px)
+              font-size: 12px
+            
+        .b-access
+          padding: 0 0 0 15px
+          
+          a
+            background-color: $primary-red
+            border-radius: 15px
+            text-transform: none
+            color: rgba(255, 255, 255, 0.9)
+          
+            &:hover
+              background-color: darken($primary-red, 10%)
+              color: rgba(255, 255, 255, 1)
+            
+  .home-main
+    height: 100%
+    
+    div, .hand
+      height: 100%
+      
+    .action
+      height: 100%
+      padding: 0
+      margin: 0
+      display: -webkit-box
+      display: -moz-box
+      display: -ms-flexbox
+      display: -webkit-flex
+      display: flex
+      align-items: center
+      justify-content: center
+      
+      .action-wrapper
+        height: auto
+      
+        h1, h2
+          color: #fff
+          font-family: $font-main
+          width: 100%
+          display: block
+
+        h1
+          font-size: 42px
+          line-height: 55px
+
+        h2
+          font-size: 18px
+          line-height: 24px
+          margin-top: 30px
+          
+        .input-group
+          margin-top: 40px
+          font-family: $font-main
+          
+          input
+            font-size: 16px
+            padding: 25px
+            border-radius: 10px
+            border-top-right-radius: 0
+            border-bottom-right-radius: 0
+            box-shadow: none
+            border-color: #fff
+            
+          .input-group-btn
+            
+            .btn
+              font-size: 16px
+              padding: 14px 20px
+              border-radius: 10px
+              border-top-left-radius: 0
+              border-bottom-left-radius: 0
+              border-color: $primary
+              background-color: $primary
+              color: #fff
+              text-transform: uppercase
+              outline: none
+              
+              &:hover
+                z-index: 1
+                background-color: darken($primary, 15%)
+                border-color: darken($primary, 12%)
+              
+              &:focus
+                z-index: 1
+                
+      
+    .hand
+      position: relative
+      
+      .phone
+        height: 209px
+        width: 177px
+        position: absolute
+        background-color: transparent
+        bottom: 235px
+        left: 75px
+        z-index: 3
+        
+        img
+          width: 100%
+          position: relative
+      
+      img
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        z-index: 2
+            
+  footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    
+    .footer-nav
+      padding-bottom: 20px
+      font-family: $font-main
+      
+      ul
+        padding-left: 10px
+        margin-bottom: 0
+        
+        li
+          list-style: none
+          float: left
+          
+          a
+            color: rgba(255, 255, 255, 0.75)
+            padding: 0 15px
+            text-decoration: none
+            text-transform: uppercase
+            font-size: 12px
+            
+            &:hover
+              color: rgba(255, 255, 255, 1)

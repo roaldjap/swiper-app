@@ -1,0 +1,17 @@
+{
+    "path": {
+        "sass/style.sass": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "includePaths": [
+                    "../bower_components/bourbon/app/assets/stylesheets"
+                ],
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": true,
+            "fonts.fontSize": "10px"
+        }
+    }
+}
