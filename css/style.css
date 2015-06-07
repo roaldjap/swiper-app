@@ -16,7 +16,7 @@ a, button {
   transition: all 0.2s ease-in-out; }
 
 body {
-  background-color: #ffb518;
+  background-color: black;
   position: relative; }
   body .carousel {
     width: 100%;
@@ -38,6 +38,14 @@ body {
         background-image: url("../img/slider-3.jpg"); }
       body .carousel .carousel-inner .slider-4 {
         background-image: url("../img/slider-4.jpg"); }
+  body .bg-carousel-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
   body .main-nav {
     padding-top: 25px; }
     body .main-nav .icon-bar {
@@ -215,6 +223,18 @@ body {
         body .home-main .hand .phone img {
           width: 100%;
           position: relative; }
+        body .home-main .hand .phone .carousel-control {
+          position: absolute;
+          height: 21%;
+          width: 25%;
+          border-radius: 50%;
+          bottom: -30%;
+          top: auto;
+          opacity: 0; }
+          body .home-main .hand .phone .carousel-control.left {
+            left: 16%; }
+          body .home-main .hand .phone .carousel-control.right {
+            right: 17%; }
         @media screen and (min-width: 992px) and (max-width: 1199px) {
           body .home-main .hand .phone {
             height: 171px;

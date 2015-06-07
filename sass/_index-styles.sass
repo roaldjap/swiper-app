@@ -12,7 +12,7 @@ a, button
   @include transition(all 0.2s ease-in-out)
   
 body
-  background-color: $primary
+  background-color: black
   position: relative
   
   .carousel
@@ -42,6 +42,15 @@ body
       .slider-4
         background-image: url("../img/slider-4.jpg")
         
+  .bg-carousel-overlay
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(black, 0.5)
+    
   .main-nav
     padding-top: 25px
         
@@ -252,6 +261,21 @@ body
         img
           width: 100%
           position: relative
+          
+        .carousel-control
+          position: absolute
+          height: 21%
+          width: 25%
+          border-radius: 50%
+          bottom: -30%
+          top: auto
+          opacity: 0
+          
+          &.left
+            left: 16%
+
+          &.right
+            right: 17%
           
         @media screen and (min-width: 992px) and (max-width: 1199px)
           height: 171px

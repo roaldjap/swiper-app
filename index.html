@@ -23,7 +23,7 @@
 <body>
  
   <!-- Main Carousel -->
-  <div class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
+  <div class="carousel slide" id="myCarousel" data-ride="carousel" data-interval="5000" data-pause="false">
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
@@ -36,6 +36,8 @@
       <div class="item slider-4">
       </div>
     </div>
+    
+    <div class="bg-carousel-overlay"></div>
     
   </div>
   
@@ -83,7 +85,7 @@
         </div>
         <div class="col-md-5 col-sm-6 hidden-xs">
           <article class="hand">
-            <div class="carousel slide phone" data-ride="carousel" data-interval="5000" data-pause="false">
+            <div class="carousel slide phone" id="myCarousel2" data-ride="carousel" data-interval="5000" data-pause="false">
 
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
@@ -100,7 +102,9 @@
                   <img src="img/phone-slide-4.png" alt="phone image 4">
                 </div>
               </div>
-
+              
+              <a class="carousel-control left" href="#" onclick="slideCarousels(['myCarousel', 'myCarousel2'], 'prev')">&lsaquo;</a>
+              <a class="carousel-control right" href="#" onclick="slideCarousels(['myCarousel', 'myCarousel2'], 'next')">&rsaquo;</a>
             </div>
             <img src="img/hand.png" alt="Hand with iPhone">
           </article>
@@ -123,6 +127,7 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
+
 </body>
 
 </html>
