@@ -16,6 +16,11 @@ a, button {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 p {
   font-size: 16px;
   line-height: 24px;
@@ -53,12 +58,15 @@ body {
     left: 0;
     background-color: rgba(0, 0, 0, 0.3); }
   body .main-nav {
-    padding-top: 25px; }
+    padding-top: 25px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
     body .main-nav .icon-bar {
       background-color: #ffb518; }
     body .main-nav .navbar-brand {
       height: auto;
-      padding-left: 30px; }
+      padding: 10px 15px 15px 30px; }
     body .main-nav .navbar-collapse {
       padding-right: 15px; }
       @media screen and (max-width: 767px) {
@@ -73,21 +81,25 @@ body {
           border-radius: 18px; } }
       body .main-nav .navbar-collapse .navbar-nav li {
         padding: 0 5px; }
-        body .main-nav .navbar-collapse .navbar-nav li a {
+        body .main-nav .navbar-collapse .navbar-nav li .nav-link {
           font-size: 14px;
           font-family: 'Varela Round', sans-serif;
           color: rgba(255, 255, 255, 0.75);
           text-transform: uppercase;
           padding: 5px 15px;
           margin-top: 10px; }
-          body .main-nav .navbar-collapse .navbar-nav li a:focus {
+          body .main-nav .navbar-collapse .navbar-nav li .nav-link:focus {
             background-color: transparent; }
-          body .main-nav .navbar-collapse .navbar-nav li a:hover {
+          body .main-nav .navbar-collapse .navbar-nav li .nav-link:hover {
             background-color: transparent;
             color: white; }
           @media screen and (min-width: 768px) and (max-width: 806px) {
-            body .main-nav .navbar-collapse .navbar-nav li a {
+            body .main-nav .navbar-collapse .navbar-nav li .nav-link {
               font-size: 12px; } }
+        body .main-nav .navbar-collapse .navbar-nav li .scroll-link {
+          color: #888888; }
+          body .main-nav .navbar-collapse .navbar-nav li .scroll-link:hover {
+            color: black; }
       body .main-nav .navbar-collapse .navbar-nav .b-access {
         padding: 0 0 0 15px; }
         @media screen and (max-width: 767px) {
@@ -96,15 +108,23 @@ body {
             text-align: center; } }
         body .main-nav .navbar-collapse .navbar-nav .b-access a {
           background-color: #ff4318;
-          border-radius: 15px;
+          border-radius: 20px;
           text-transform: none;
-          color: rgba(255, 255, 255, 0.9); }
+          color: rgba(255, 255, 255, 0.9);
+          padding: 7px 20px;
+          margin-top: 7px; }
           body .main-nav .navbar-collapse .navbar-nav .b-access a:focus {
             background-color: #ff4318;
             color: rgba(255, 255, 255, 0.9); }
           body .main-nav .navbar-collapse .navbar-nav .b-access a:hover {
             background-color: #e42a00;
             color: white; }
+  body .scroll-nav {
+    background-color: #fff;
+    padding-top: 10px;
+    -webkit-box-shadow: 0px 2px 5px 0px #999999;
+    -moz-box-shadow: 0px 2px 5px 0px #999999;
+    box-shadow: 0px 2px 5px 0px #999999; }
   body .home-main {
     height: 100%; }
     body .home-main div, body .home-main .hand {
@@ -261,26 +281,26 @@ body {
         left: 0;
         width: 100%;
         z-index: 2; }
-  body footer {
+  body .home-footer {
     position: absolute;
     bottom: 0;
     width: 100%; }
-    body footer .footer-nav {
+    body .home-footer .footer-nav {
       padding-bottom: 20px;
       font-family: 'Varela Round', sans-serif; }
-      body footer .footer-nav ul {
+      body .home-footer .footer-nav ul {
         padding-left: 10px;
         margin-bottom: 0; }
-        body footer .footer-nav ul li {
+        body .home-footer .footer-nav ul li {
           list-style: none;
           float: left; }
-          body footer .footer-nav ul li a {
+          body .home-footer .footer-nav ul li a {
             color: rgba(255, 255, 255, 0.75);
             padding: 0 15px;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 12px; }
-            body footer .footer-nav ul li a:hover {
+            body .home-footer .footer-nav ul li a:hover {
               color: white; }
 
 .b-access-hero {
@@ -307,7 +327,7 @@ body {
 
 .b-access-main {
   background-color: white;
-  padding: 50px 0; }
+  padding: 50px 0 40px; }
   .b-access-main h2 {
     font-size: 36px;
     line-height: 44px;
@@ -321,16 +341,88 @@ body {
       font-size: 20px;
       font-weight: normal; }
     .b-access-main form .form-control {
-      margin-bottom: 24px; }
+      margin-bottom: 10px; }
       .b-access-main form .form-control:focus {
         border-color: #ffb518;
         outline: 0;
         -webkit-box-shadow: inset 0 1px 1px rgba(255, 67, 24, 0.075), 0 0 8px rgba(255, 67, 24, 0.6);
         box-shadow: inset 0 1px 1px rgba(255, 67, 24, 0.075), 0 0 8px rgba(255, 67, 24, 0.6); }
-    @media screen and (max-width: 480px) {
-      .b-access-main form .check-group {
-        width: 100%; } }
-    .b-access-main form .check-group .checklabel {
-      padding-left: 25px; }
+    .b-access-main form .check-group {
+      width: 50%; }
+      @media screen and (max-width: 480px) {
+        .b-access-main form .check-group {
+          width: 100%; } }
+      .b-access-main form .check-group .checklabel {
+        padding-left: 25px; }
+      .b-access-main form .check-group input[type="checkbox"] {
+        vertical-align: middle; }
+      .b-access-main form .check-group input[type="checkbox"] + label {
+        cursor: pointer; }
+      .b-access-main form .check-group input[type="checkbox"] + label:before {
+        content: "";
+        display: inline-block;
+        width: 29px;
+        height: 26px;
+        margin: -1px 20px 0 -38px;
+        vertical-align: middle;
+        background: url('../img/check-sprite.png') left top no-repeat; }
+      .b-access-main form .check-group input[type="checkbox"]:checked + label:before {
+        background: url('../img/check-sprite.png') -29px top no-repeat; }
+    .b-access-main form .certify-group {
+      float: left;
+      margin-top: 10px; }
+      .b-access-main form .certify-group .certify {
+        vertical-align: middle; }
+        .b-access-main form .certify-group .certify + label {
+          cursor: pointer; }
+        .b-access-main form .certify-group .certify + label:before {
+          content: "";
+          display: inline-block;
+          width: 19px;
+          height: 17px;
+          margin: 0 10px 0 0;
+          vertical-align: middle;
+          background: url('../img/check-sprite-small.png') left top no-repeat; }
+        .b-access-main form .certify-group .certify:checked + label:before {
+          background: url('../img/check-sprite-small.png') -19px top no-repeat; }
+      .b-access-main form .certify-group .certify-label {
+        margin-top: -19px;
+        font-size: 14px;
+        color: #888888; }
+    .b-access-main form .signup-btn {
+      background-color: #ffb518;
+      color: white;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding: 15px 35px;
+      border-radius: 20px; }
+      .b-access-main form .signup-btn:hover {
+        background-color: #e49b00; }
+      .b-access-main form .signup-btn:focus {
+        outline: 0; }
+      @media screen and (max-width: 768px) {
+        .b-access-main form .signup-btn {
+          width: 100%; } }
+
+.footer-main {
+  background-color: white;
+  padding-bottom: 20px; }
+  .footer-main .footer-nav ul {
+    width: 100%;
+    text-align: center;
+    padding-left: 0; }
+    .footer-main .footer-nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: -4px;
+      padding: 0 10px; }
+      .footer-main .footer-nav ul li a {
+        color: #888888;
+        padding: 0 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 12px; }
+        .footer-main .footer-nav ul li a:hover {
+          color: black; }
 
 /*# sourceMappingURL=style.css.map */

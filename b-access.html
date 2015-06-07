@@ -37,13 +37,13 @@
 
       <div class="collapse navbar-collapse pull-right" id="main-nav">
         <ul class="nav navbar-nav">
-          <li><a href="#">Blog</a>
+          <li><a href="#" class="nav-link">Blog</a>
           </li>
-          <li><a href="#">Support</a>
+          <li><a href="#" class="nav-link">Support</a>
           </li>
-          <li><a href="#">Jobs</a>
+          <li><a href="#" class="nav-link">Jobs</a>
           </li>
-          <li><a href="#">Press</a>
+          <li><a href="#" class="nav-link">Press</a>
           </li>
           <li class="b-access"><a href="b-access.html">Blogger &amp; Publisher Access</a>
           </li>
@@ -53,7 +53,7 @@
     </div>
   </nav>
   
-  <section class="b-access-hero">
+  <section class="hero b-access-hero">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -63,7 +63,7 @@
     </div>
   </section>
   
-  <section class="b-access-main">
+  <section class="main b-access-main">
     <div class="container">
       <div class="row">
         
@@ -71,44 +71,64 @@
           <h2>Sign up and share your <br>amazing content</h2>
           <p>Please fill in the fields below to sign up</p>
           <form>
-            <div class="form-group">
-              <label for="company">Company Name</label>
-              <input type="text" class="form-control" id="company" required>
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <label for="company">Company Name</label>
+                <input type="text" class="form-control" id="company" required>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="fullname">Full Name</label>
-              <input type="text" class="form-control" id="fullname" required>
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <label for="fullname">Full Name</label>
+                <input type="text" class="form-control" id="fullname" required>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" required>
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="rss">RSS feed to blog</label>
-              <input type="text" class="form-control" id="rss">
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <label for="rss">RSS feed to blog</label>
+                <input type="text" class="form-control" id="rss">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="website">Website URL</label>
-              <input type="text" class="form-control" id="website">
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <label for="website">Website URL</label>
+                <input type="text" class="form-control" id="website">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="twitter">Twitter URL</label>
-              <input type="text" class="form-control" id="twitter">
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <label for="twitter">Twitter URL</label>
+                <input type="text" class="form-control" id="twitter">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="facebook">Facebook URL</label>
-              <input type="text" class="form-control" id="facebook">
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <label for="facebook">Facebook URL</label>
+                <input type="text" class="form-control" id="facebook">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="instagram">Instagram URL</label>
-              <input type="text" class="form-control" id="instagram">
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <label for="instagram">Instagram URL</label>
+                <input type="text" class="form-control" id="instagram">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="pinterest">Pinterest URL</label>
-              <input type="text" class="form-control" id="pinterest">
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <label for="pinterest">Pinterest URL</label>
+                <input type="text" class="form-control" id="pinterest">
+              </div>
             </div>
-            <div class="form-group">
-              <label>Categories of Interest</label>
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <label>Categories of Interest</label>
+              </div>
             </div>
             
             <div class="col-xs-6 check-group">
@@ -168,12 +188,39 @@
               </div>
             </div>
             
+            <div class="form-group certify-group col-xs-12">
+              <div class="row">
+                <input type="checkbox" class="certify" id="certify" required><label class="certify-label" for="certify">I certify that all of the information above is to the best of my knowledge and belief true and correct.</label>
+              </div>
+            </div>
+            
+            <div class="form-group col-xs-12">
+              <div class="row">
+                <button type="submit" class="btn signup-btn">Sign Up</button>
+              </div>
+            </div>
+            
           </form>
         </div>
         
       </div>
     </div>
   </section>
+  
+  <footer class="footer-main">
+    <div class="container-fluid footer-nav">
+      <ul class="clearfix">
+        <li><a href="#">Contact</a>
+        </li>
+        <li><a href="#">Privacy</a>
+        </li>
+        <li><a href="#">Terms</a>
+        </li>
+        <li><a href="#">Safety</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>

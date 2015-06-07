@@ -12,6 +12,11 @@ html, body
 a, button
   @include transition(all 0.2s ease-in-out)
   
+*, *:after, *:before
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  
 p
   font-size: 16px
   line-height: 24px
@@ -59,13 +64,14 @@ body
     
   .main-nav
     padding-top: 25px
+    @include transition(all 0.2s ease-in-out)
         
     .icon-bar
       background-color: $primary
       
     .navbar-brand
       height: auto
-      padding-left: 30px
+      padding: 10px 15px 15px 30px
       
     .navbar-collapse
       padding-right: 15px
@@ -85,7 +91,7 @@ body
         li
           padding: 0 5px
               
-          a
+          .nav-link
             font-size: 14px
             font-family: $font-main
             color: rgba(white, 0.75)
@@ -102,6 +108,12 @@ body
             
             @media screen and (min-width: 768px) and (max-width: 806px)
               font-size: 12px
+              
+          .scroll-link
+            color: lighten($primary-grey, 10%)
+            
+            &:hover
+              color: black
             
         .b-access
           padding: 0 0 0 15px
@@ -112,9 +124,11 @@ body
           
           a
             background-color: $primary-red
-            border-radius: 15px
+            border-radius: 20px
             text-transform: none
             color: rgba(white, 0.9)
+            padding: 7px 20px
+            margin-top: 7px
           
             &:focus
               background-color: $primary-red
@@ -124,7 +138,12 @@ body
               background-color: darken($primary-red, 10%)
               color: rgba(white, 1)
             
-            
+  .scroll-nav
+    background-color: #fff
+    padding-top: 10px
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(153,153,153,1)
+    -moz-box-shadow: 0px 2px 5px 0px rgba(153,153,153,1)
+    box-shadow: 0px 2px 5px 0px rgba(153,153,153,1)
             
   .home-main
     height: 100%
@@ -304,7 +323,7 @@ body
         width: 100%
         z-index: 2
             
-  footer
+  .home-footer
     position: absolute
     bottom: 0
     width: 100%

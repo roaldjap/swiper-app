@@ -52,6 +52,7 @@ $(document).ready(function() {
   
 });
 
+//Slide both the BG and the Phone carousels
 function slideCarousels(ids, action) {
   var len = ids.length;
   var id = null;
@@ -61,3 +62,18 @@ function slideCarousels(ids, action) {
     $('#' + id).carousel({ slide: action });
   }
 }
+
+//Fixed Nav Animation on Scroll
+$(window).scroll(function() {
+
+  var wScroll = $(this).scrollTop();
+  
+  if(wScroll > $('.main').offset().top - 200) {
+    $('.main-nav').addClass('scroll-nav');
+    $('.nav-link').addClass('scroll-link');
+  } else {
+    $('.main-nav').removeClass('scroll-nav');
+    $('.nav-link').removeClass('scroll-link');
+  }
+  
+});
