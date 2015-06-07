@@ -1,6 +1,7 @@
 html, body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: 'Varela Round', sans-serif; }
 
 ::selection {
   background: #e49b00;
@@ -15,8 +16,13 @@ a, button {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6e6e6e; }
+
 body {
-  background-color: black;
+  background-color: white;
   position: relative; }
   body .carousel {
     width: 100%;
@@ -45,7 +51,7 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.3); }
   body .main-nav {
     padding-top: 25px; }
     body .main-nav .icon-bar {
@@ -276,5 +282,55 @@ body {
             font-size: 12px; }
             body footer .footer-nav ul li a:hover {
               color: white; }
+
+.b-access-hero {
+  background-image: url("../img/b-access-hero.jpg");
+  background-size: cover;
+  background-position: top center; }
+  .b-access-hero h1 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    background-color: #ff4318;
+    display: block;
+    width: 100%;
+    max-width: 510px;
+    margin: 250px auto 30px;
+    padding: 10px 30px;
+    border-radius: 30px; }
+    @media screen and (max-width: 540px) {
+      .b-access-hero h1 {
+        font-size: 24px;
+        line-height: 32px;
+        max-width: 400px; } }
+
+.b-access-main {
+  background-color: white;
+  padding: 50px 0; }
+  .b-access-main h2 {
+    font-size: 36px;
+    line-height: 44px;
+    color: #ffb518;
+    margin-bottom: 15px; }
+  .b-access-main p {
+    margin-bottom: 20px; }
+  .b-access-main form {
+    color: #6e6e6e; }
+    .b-access-main form label {
+      font-size: 20px;
+      font-weight: normal; }
+    .b-access-main form .form-control {
+      margin-bottom: 24px; }
+      .b-access-main form .form-control:focus {
+        border-color: #ffb518;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(255, 67, 24, 0.075), 0 0 8px rgba(255, 67, 24, 0.6);
+        box-shadow: inset 0 1px 1px rgba(255, 67, 24, 0.075), 0 0 8px rgba(255, 67, 24, 0.6); }
+    @media screen and (max-width: 480px) {
+      .b-access-main form .check-group {
+        width: 100%; } }
+    .b-access-main form .check-group .checklabel {
+      padding-left: 25px; }
 
 /*# sourceMappingURL=style.css.map */

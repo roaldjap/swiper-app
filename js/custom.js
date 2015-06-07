@@ -22,6 +22,34 @@ $(document).ready(function() {
 
     carousel.cycle();
   });
+  
+  //Select All Checkboxes
+  $('#all').click(function(e) {
+    if(this.checked) {
+      $('.check').each(function() {
+        this.checked = true;          
+      });
+    }else{
+      $('.check').each(function() {
+        this.checked = false;               
+      });         
+    }
+  });
+  
+  //Deselect the All checkbox
+  $(".check").click(function () {
+    if (!$(this).is(":checked")){
+      $("#all").prop("checked", false);
+    }else{
+      var flag = 0;
+      $(".check").each(function(){
+        if(!this.checked)
+          flag=1;
+      })              
+      if(flag == 0){ $("#all").prop("checked", true);}
+    }
+  });
+  
 });
 
 function slideCarousels(ids, action) {

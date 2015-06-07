@@ -5,23 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>Swiper</title>
-  
+
   <!-- Bootstrap -->
   <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-  
+
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
-  
+
   <!-- Main Style -->
   <link rel="stylesheet" href="css/style.css">
-  
+
 </head>
 
 <body>
- 
+
   <!-- Main Carousel -->
   <div class="carousel slide" id="myCarousel" data-ride="carousel" data-interval="5000" data-pause="false">
 
@@ -36,11 +36,11 @@
       <div class="item slider-4">
       </div>
     </div>
-    
+
     <div class="bg-carousel-overlay"></div>
-    
+
   </div>
-  
+
   <nav class="navbar navbar-fixed-top main-nav">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -50,22 +50,28 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="img/swiper-logo.png" alt="Swiper Logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="img/swiper-logo.png" alt="Swiper Logo">
+        </a>
       </div>
-      
+
       <div class="collapse navbar-collapse pull-right" id="main-nav">
         <ul class="nav navbar-nav">
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Press</a></li>
-          <li class="b-access"><a href="#">Blogger &amp; Publisher Access</a></li>
+          <li><a href="#">Blog</a>
+          </li>
+          <li><a href="#">Support</a>
+          </li>
+          <li><a href="#">Jobs</a>
+          </li>
+          <li><a href="#">Press</a>
+          </li>
+          <li class="b-access"><a href="b-access.html">Blogger &amp; Publisher Access</a>
+          </li>
         </ul>
       </div>
-      
+
     </div>
   </nav>
-  
+
   <section class="home-main">
     <div class="container">
       <div class="row">
@@ -74,12 +80,15 @@
             <div class="action-wrapper">
               <h1>Reading just got faster... easier... and way more fun</h1>
               <h2>Sign up for our beta list and receive an email as soon as we go live</h2>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Enter Your Email Address...">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Sign up for Beta</button>
-                </span>
-              </div><!-- /input-group -->
+              <form action="">
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Enter Your Email Address..." required>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Sign up for Beta</button>
+                  </span>
+                </div>
+              </form>
+              <!-- /input-group -->
             </div>
           </article>
         </div>
@@ -102,7 +111,7 @@
                   <img src="img/phone-slide-4.png" alt="phone image 4">
                 </div>
               </div>
-              
+
               <a class="carousel-control left" href="#" onclick="slideCarousels(['myCarousel', 'myCarousel2'], 'prev')">&lsaquo;</a>
               <a class="carousel-control right" href="#" onclick="slideCarousels(['myCarousel', 'myCarousel2'], 'next')">&rsaquo;</a>
             </div>
@@ -112,18 +121,22 @@
       </div>
     </div>
   </section>
-  
+
   <footer>
     <div class="container-fluid footer-nav">
       <ul class="clearfix">
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Safety</a></li>
+        <li><a href="#">Contact</a>
+        </li>
+        <li><a href="#">Privacy</a>
+        </li>
+        <li><a href="#">Terms</a>
+        </li>
+        <li><a href="#">Safety</a>
+        </li>
       </ul>
     </div>
   </footer>
-  
+
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
