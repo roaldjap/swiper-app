@@ -80,7 +80,7 @@ body {
           box-shadow: none;
           border-radius: 18px;
           position: absolute;
-          right: 0;
+          right: 10px;
           top: 90%; } }
       body .main-nav .navbar-collapse .navbar-nav li {
         padding: 0 5px; }
