@@ -232,9 +232,11 @@ body {
           top: auto;
           opacity: 0; }
           body .home-main .hand .phone .carousel-control.left {
-            left: 16%; }
+            right: 16%;
+            left: auto; }
           body .home-main .hand .phone .carousel-control.right {
-            right: 17%; }
+            left: 17%;
+            right: auto; }
         @media screen and (min-width: 992px) and (max-width: 1199px) {
           body .home-main .hand .phone {
             height: 171px;
