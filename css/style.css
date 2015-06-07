@@ -10,6 +10,11 @@ html, body {
   background: #e49b00;
   /* Gecko Browsers */ }
 
+a, button {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
 body {
   background-color: #ffb518;
   position: relative; }
@@ -42,6 +47,16 @@ body {
       padding-left: 30px; }
     body .main-nav .navbar-collapse {
       padding-right: 15px; }
+      @media screen and (max-width: 767px) {
+        body .main-nav .navbar-collapse {
+          width: 100%;
+          max-width: 250px;
+          margin: 0;
+          background-color: rgba(51, 60, 69, 0.95);
+          border-top: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          border-radius: 18px; } }
       body .main-nav .navbar-collapse .navbar-nav li {
         padding: 0 5px; }
         body .main-nav .navbar-collapse .navbar-nav li a {
@@ -61,11 +76,18 @@ body {
               font-size: 12px; } }
       body .main-nav .navbar-collapse .navbar-nav .b-access {
         padding: 0 0 0 15px; }
+        @media screen and (max-width: 767px) {
+          body .main-nav .navbar-collapse .navbar-nav .b-access {
+            padding: 0 5px;
+            text-align: center; } }
         body .main-nav .navbar-collapse .navbar-nav .b-access a {
           background-color: #ff4318;
           border-radius: 15px;
           text-transform: none;
           color: rgba(255, 255, 255, 0.9); }
+          body .main-nav .navbar-collapse .navbar-nav .b-access a:focus {
+            background-color: #ff4318;
+            color: rgba(255, 255, 255, 0.9); }
           body .main-nav .navbar-collapse .navbar-nav .b-access a:hover {
             background-color: #e42a00;
             color: white; }
@@ -94,6 +116,14 @@ body {
         body .home-main .action .action-wrapper h1 {
           font-size: 42px;
           line-height: 55px; }
+          @media screen and (min-width: 768px) and (max-width: 991px) {
+            body .home-main .action .action-wrapper h1 {
+              font-size: 36px;
+              line-height: 42px; } }
+          @media screen and (max-width: 480px) {
+            body .home-main .action .action-wrapper h1 {
+              font-size: 32px;
+              line-height: 38px; } }
         body .home-main .action .action-wrapper h2 {
           font-size: 18px;
           line-height: 24px;
@@ -101,14 +131,48 @@ body {
         body .home-main .action .action-wrapper .input-group {
           margin-top: 40px;
           font-family: 'Varela Round', sans-serif; }
+          @media screen and (min-width: 768px) and (max-width: 991px) {
+            body .home-main .action .action-wrapper .input-group {
+              width: 100%; } }
+          @media screen and (max-width: 480px) {
+            body .home-main .action .action-wrapper .input-group {
+              width: 100%; } }
           body .home-main .action .action-wrapper .input-group input {
             font-size: 16px;
             padding: 25px;
             border-radius: 10px;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
+            -webkit-box-shadow: none;
             box-shadow: none;
             border-color: #fff; }
+            body .home-main .action .action-wrapper .input-group input:focus {
+              border-color: #ffb518;
+              outline: 0;
+              -webkit-box-shadow: inset 0 1px 1px rgba(255, 67, 24, 0.075), 0 0 8px rgba(255, 67, 24, 0.6);
+              box-shadow: inset 0 1px 1px rgba(255, 67, 24, 0.075), 0 0 8px rgba(255, 67, 24, 0.6); }
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+              body .home-main .action .action-wrapper .input-group input {
+                display: block;
+                float: left;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 0; } }
+            @media screen and (max-width: 480px) {
+              body .home-main .action .action-wrapper .input-group input {
+                display: block;
+                float: left;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 0; } }
+          @media screen and (min-width: 768px) and (max-width: 991px) {
+            body .home-main .action .action-wrapper .input-group .input-group-btn {
+              display: block;
+              float: left;
+              width: 100%; } }
+          @media screen and (max-width: 480px) {
+            body .home-main .action .action-wrapper .input-group .input-group-btn {
+              display: block;
+              float: left;
+              width: 100%; } }
           body .home-main .action .action-wrapper .input-group .input-group-btn .btn {
             font-size: 16px;
             padding: 14px 20px;
@@ -126,6 +190,18 @@ body {
               border-color: #da9400; }
             body .home-main .action .action-wrapper .input-group .input-group-btn .btn:focus {
               z-index: 1; }
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+              body .home-main .action .action-wrapper .input-group .input-group-btn .btn {
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 10px;
+                width: 100%;
+                margin: 0; } }
+            @media screen and (max-width: 480px) {
+              body .home-main .action .action-wrapper .input-group .input-group-btn .btn {
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 10px;
+                width: 100%;
+                margin: 0; } }
     body .home-main .hand {
       position: relative; }
       body .home-main .hand .phone {
@@ -139,6 +215,18 @@ body {
         body .home-main .hand .phone img {
           width: 100%;
           position: relative; }
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          body .home-main .hand .phone {
+            height: 171px;
+            width: 146px;
+            bottom: 193px;
+            left: 61px; } }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          body .home-main .hand .phone {
+            height: 156px;
+            width: 135px;
+            bottom: 179px;
+            left: 56px; } }
       body .home-main .hand img {
         position: absolute;
         bottom: 0;

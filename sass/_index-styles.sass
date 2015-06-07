@@ -7,6 +7,9 @@ html, body
   
 ::-moz-selection
   background: darken($primary, 10%) /* Gecko Browsers */
+
+a, button
+  @include transition(all 0.2s ease-in-out)
   
 body
   background-color: $primary
@@ -52,15 +55,25 @@ body
     .navbar-collapse
       padding-right: 15px
       
+      @media screen and (max-width: 767px)
+        width: 100%
+        max-width: 250px
+        margin: 0
+        background-color: rgba(51, 60, 69, 0.95)
+        border-top: none
+        -webkit-box-shadow: none
+        box-shadow: none
+        border-radius: 18px
+      
       .navbar-nav
         
         li
           padding: 0 5px
-          
+              
           a
             font-size: 14px
             font-family: $font-main
-            color: rgba(255, 255, 255, 0.75)
+            color: rgba(white, 0.75)
             text-transform: uppercase
             padding: 5px 15px
             margin-top: 10px
@@ -70,7 +83,7 @@ body
             
             &:hover
               background-color: transparent
-              color: rgba(255, 255, 255, 1)
+              color: rgba(white, 1)
             
             @media screen and (min-width: 768px) and (max-width: 806px)
               font-size: 12px
@@ -78,15 +91,25 @@ body
         .b-access
           padding: 0 0 0 15px
           
+          @media screen and (max-width: 767px)
+            padding: 0 5px
+            text-align: center
+          
           a
             background-color: $primary-red
             border-radius: 15px
             text-transform: none
-            color: rgba(255, 255, 255, 0.9)
+            color: rgba(white, 0.9)
           
+            &:focus
+              background-color: $primary-red
+              color: rgba(white, 0.9)
+            
             &:hover
               background-color: darken($primary-red, 10%)
-              color: rgba(255, 255, 255, 1)
+              color: rgba(white, 1)
+            
+            
             
   .home-main
     height: 100%
@@ -118,6 +141,14 @@ body
         h1
           font-size: 42px
           line-height: 55px
+          
+          @media screen and (min-width: 768px) and (max-width: 991px)
+            font-size: 36px
+            line-height: 42px
+            
+          @media screen and (max-width: 480px)
+            font-size: 32px
+            line-height: 38px
 
         h2
           font-size: 18px
@@ -128,16 +159,51 @@ body
           margin-top: 40px
           font-family: $font-main
           
+          @media screen and (min-width: 768px) and (max-width: 991px)
+            width: 100%
+            
+          @media screen and (max-width: 480px)
+            width: 100%
+          
           input
             font-size: 16px
             padding: 25px
             border-radius: 10px
             border-top-right-radius: 0
             border-bottom-right-radius: 0
+            -webkit-box-shadow: none
             box-shadow: none
             border-color: #fff
             
+            &:focus
+              border-color: $primary;
+              outline: 0;
+              -webkit-box-shadow: inset 0 1px 1px rgba($primary-red,.075),0 0 8px rgba($primary-red,.6);
+              box-shadow: inset 0 1px 1px rgba($primary-red,.075),0 0 8px rgba($primary-red,.6);
+            
+            @media screen and (min-width: 768px) and (max-width: 991px)
+              display: block
+              float: left
+              border-top-right-radius: 10px
+              border-bottom-left-radius: 0
+              
+            @media screen and (max-width: 480px)
+              display: block
+              float: left
+              border-top-right-radius: 10px
+              border-bottom-left-radius: 0
+              
           .input-group-btn
+            
+            @media screen and (min-width: 768px) and (max-width: 991px)
+              display: block
+              float: left
+              width: 100%
+              
+            @media screen and (max-width: 480px)
+              display: block
+              float: left
+              width: 100%
             
             .btn
               font-size: 16px
@@ -158,7 +224,18 @@ body
               
               &:focus
                 z-index: 1
+              
+              @media screen and (min-width: 768px) and (max-width: 991px)
+                border-top-right-radius: 0
+                border-bottom-left-radius: 10px
+                width: 100%
+                margin: 0
                 
+              @media screen and (max-width: 480px)
+                border-top-right-radius: 0
+                border-bottom-left-radius: 10px
+                width: 100%
+                margin: 0
       
     .hand
       position: relative
@@ -175,6 +252,18 @@ body
         img
           width: 100%
           position: relative
+          
+        @media screen and (min-width: 992px) and (max-width: 1199px)
+          height: 171px
+          width: 146px
+          bottom: 193px
+          left: 61px
+          
+        @media screen and (min-width: 768px) and (max-width: 991px)
+          height: 156px
+          width: 135px
+          bottom: 179px
+          left: 56px
       
       img
         position: absolute
@@ -201,11 +290,11 @@ body
           float: left
           
           a
-            color: rgba(255, 255, 255, 0.75)
+            color: rgba(white, 0.75)
             padding: 0 15px
             text-decoration: none
             text-transform: uppercase
             font-size: 12px
             
             &:hover
-              color: rgba(255, 255, 255, 1)
+              color: rgba(white, 1)
