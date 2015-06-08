@@ -21,11 +21,10 @@ $(document).ready(function() {
         && (this.interval = setInterval($.proxy(this.prev, this), this.options.interval))
       return this;
     };
-    
-    $(window).load(function() {
-      carousel.cycle();
-    });
-
+  });
+  
+  $(window).load(function() {
+    carousel.cycle();
   });
   
   //Select All Checkboxes
