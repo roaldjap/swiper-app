@@ -257,8 +257,12 @@ body {
                 border-bottom-left-radius: 10px;
                 width: 100%;
                 margin: 0; } }
+    body .home-main .hand-container {
+      overflow-x: hidden; }
     body .home-main .hand {
-      position: relative; }
+      position: relative;
+      margin-left: -15px;
+      margin-right: -15px; }
       body .home-main .hand .phone {
         height: 209px;
         width: 177px;
