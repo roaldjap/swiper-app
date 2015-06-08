@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
   $('.carousel').each(function(){
     $(this).carousel();
 
@@ -12,6 +13,7 @@ $(document).ready(function() {
 
     // Override the bootstrap carousel prototype function, adding a different one won't work (it'll work only for the first slide)
     carousel.cycle = function (e) {
+      console.log(this);
       if (!e) this.paused = false
       if (this.interval) clearInterval(this.interval);
       this.options.interval
@@ -19,8 +21,11 @@ $(document).ready(function() {
         && (this.interval = setInterval($.proxy(this.prev, this), this.options.interval))
       return this;
     };
+    
+    $(window).load(function() {
+      carousel.cycle();
+    });
 
-    carousel.cycle();
   });
   
   //Select All Checkboxes
@@ -72,12 +77,22 @@ $(window).scroll(function() {
 
   var wScroll = $(this).scrollTop();
   
-  if(wScroll > $('.main').offset().top - 200) {
-    $('.main-nav').addClass('scroll-nav');
-    $('.nav-link').addClass('scroll-link');
+  if($('.home-main')[0]) {
+    if(wScroll > $('.home-main').offset().top + 10) {
+      $('.main-nav').addClass('scroll-nav');
+      $('.nav-link').addClass('scroll-link');
+    } else {
+      $('.main-nav').removeClass('scroll-nav');
+      $('.nav-link').removeClass('scroll-link');
+    }
   } else {
-    $('.main-nav').removeClass('scroll-nav');
-    $('.nav-link').removeClass('scroll-link');
+    if(wScroll > $('.main').offset().top - 200) {
+      $('.main-nav').addClass('scroll-nav');
+      $('.nav-link').addClass('scroll-link');
+    } else {
+      $('.main-nav').removeClass('scroll-nav');
+      $('.nav-link').removeClass('scroll-link');
+    }
   }
   
 });
