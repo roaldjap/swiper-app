@@ -21,15 +21,22 @@ p
   font-size: 16px
   line-height: 24px
   color: $primary-grey
+
+.home-body
+  @media screen and (max-width: 767px)
+    height: auto
+    min-height: 100%
   
 body
   background-color: white
   position: relative
+  overflow-x: hidden
   
   .carousel
     width: 100%
     height: 100%
     position: absolute
+    bottom: 0
   
     .carousel-inner
       width: 100%
@@ -156,6 +163,9 @@ body
   .home-main
     height: 100%
     
+    @media screen and (max-width: 767px)
+      height: auto
+    
     div, .hand
       height: 100%
       
@@ -170,6 +180,10 @@ body
       display: flex
       align-items: center
       justify-content: center
+      
+      @media screen and (max-width: 767px)
+        display: block
+        margin-top: 150px
       
       .action-wrapper
         height: auto
@@ -291,6 +305,19 @@ body
         left: 75px
         z-index: 3
         
+        @media screen and (min-width: 1367px) and (min-height: 769px)
+          height: 272px
+          width: 233px
+          bottom: 311px
+          left: 98px
+          
+        @media screen and (max-width: 767px)
+          bottom: 209px
+          left: 50%
+          margin-left: -80px
+          height: 180px
+          width: 156px
+          
         img
           width: 100%
           position: relative
@@ -324,12 +351,23 @@ body
           bottom: 179px
           left: 56px
       
-      img
+      & > img
         position: absolute
         bottom: 0
         left: 0
         width: 100%
         z-index: 2
+        
+        @media screen and (min-width: 1367px) and (min-height: 769px)
+          width: 600px
+          
+        @media screen and (max-width: 767px)
+          position: relative
+          bottom: 0
+          left: 50%
+          width: 400px
+          margin-top: 50px
+          margin-left: -145px
             
   .home-footer
     position: absolute
