@@ -52,6 +52,10 @@ $(document).ready(function() {
   
 });
 
+$('.carousel-control').click(function(e) {
+  e.preventDefault();
+});
+
 //Slide both the BG and the Phone carousels
 function slideCarousels(ids, action) {
   var len = ids.length;

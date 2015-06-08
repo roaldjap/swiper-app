@@ -294,7 +294,9 @@ body
                 margin: 0
     
     .hand-container
-      overflow-x: hidden
+      
+      @media screen and (max-width: 767px)
+        overflow-x: hidden
                 
     .hand
       position: relative
@@ -302,26 +304,13 @@ body
       margin-right: -15px
       
       .phone
-        height: 209px
-        width: 177px
+        height: 220px
+        width: 189px
         position: absolute
         background-color: transparent
-        bottom: 235px
-        left: 75px
+        bottom: 253px
+        left: 80px
         z-index: 3
-        
-        @media screen and (min-width: 1367px) and (min-height: 769px)
-          height: 272px
-          width: 233px
-          bottom: 311px
-          left: 98px
-          
-        @media screen and (max-width: 767px)
-          bottom: 209px
-          left: 50%
-          margin-left: -80px
-          height: 180px
-          width: 156px
           
         img
           width: 100%
@@ -343,18 +332,31 @@ body
           &.right
             left: 17%
             right: auto
+            
+        @media screen and (min-width: 1367px) and (min-height: 769px)
+          height: 272px
+          width: 233px
+          bottom: 311px
+          left: 98px
+
+        @media screen and (max-width: 767px)
+          bottom: 209px
+          left: 50%
+          margin-left: -80px
+          height: 180px
+          width: 156px
           
         @media screen and (min-width: 992px) and (max-width: 1199px)
-          height: 171px
-          width: 146px
-          bottom: 193px
-          left: 61px
+          height: 183px
+          width: 157px
+          bottom: 210px
+          left: 66px
           
         @media screen and (min-width: 768px) and (max-width: 991px)
-          height: 156px
-          width: 135px
-          bottom: 179px
-          left: 56px
+          height: 170px
+          width: 147px
+          bottom: 195px
+          left: 61px
       
       & > img
         position: absolute
