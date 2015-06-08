@@ -10,6 +10,10 @@
 
   <!-- Bootstrap -->
   <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  
+  <!-- Slick.js -->
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
 
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
@@ -23,22 +27,15 @@
 <body class="home-body">
 
   <!-- Main Carousel -->
-  <div class="carousel slide" id="myCarousel" data-ride="carousel" data-interval="5000" data-pause="false">
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active slider-1">
-      </div>
-      <div class="item slider-2">
-      </div>
-      <div class="item slider-3">
-      </div>
-      <div class="item slider-4">
-      </div>
+  <div class="slick" dir="rtl">
+    <div class="item slider-1">
     </div>
-
-    <div class="bg-carousel-overlay"></div>
-
+    <div class="item slider-2">
+    </div>
+    <div class="item slider-3">
+    </div>
+    <div class="item slider-4">
+    </div>
   </div>
 
   <nav class="navbar navbar-fixed-top main-nav">
@@ -94,28 +91,25 @@
         </div>
         <div class="col-md-5 col-sm-6 hand-container">
           <article class="hand">
-            <div class="carousel slide phone" id="myCarousel2" data-ride="carousel" data-interval="5000" data-pause="false">
-
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="img/phone-slide-1.jpg" alt="phone image 1">
-                </div>
-                <div class="item">
-                  <img src="img/phone-slide-2.jpg" alt="phone image 2">
-                </div>
-                <div class="item">
-                  <img src="img/phone-slide-3.jpg" alt="phone image 3">
-                </div>
-                <div class="item">
-                  <img src="img/phone-slide-4.jpg" alt="phone image 4">
-                </div>
-              </div>
-
-              <a class="carousel-control left" href="#" onclick="slideCarousels(['myCarousel', 'myCarousel2'], 'prev')">&rsaquo;</a>
-              <a class="carousel-control right" href="#" onclick="slideCarousels(['myCarousel', 'myCarousel2'], 'next')">&lsaquo;</a>
-            </div>
+            
             <img src="img/hand.png" alt="Hand with iPhone">
+             
+            <!-- Wrapper for slides -->
+            <div class="phone" dir="rtl">
+              <div class="item active">
+                <img src="img/phone-slide-1.jpg" alt="phone image 1">
+              </div>
+              <div class="item">
+                <img src="img/phone-slide-2.jpg" alt="phone image 2">
+              </div>
+              <div class="item">
+                <img src="img/phone-slide-3.jpg" alt="phone image 3">
+              </div>
+              <div class="item">
+                <img src="img/phone-slide-4.jpg" alt="phone image 4">
+              </div>
+            </div>
+              
           </article>
         </div>
       </div>
@@ -139,6 +133,7 @@
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
   <script src="js/custom.js"></script>
 
 </body>

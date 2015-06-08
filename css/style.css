@@ -35,27 +35,32 @@ body {
   background-color: white;
   position: relative;
   overflow-x: hidden; }
-  body .carousel {
+  body .slick-slider {
+    margin-bottom: 0; }
+  body .slick {
     width: 100%;
     height: 100%;
     position: absolute;
     bottom: 0; }
-    body .carousel .carousel-inner {
+    body .slick .slick-list {
       width: 100%;
       height: 100%; }
-      body .carousel .carousel-inner .item {
+      body .slick .slick-list .slick-track {
         width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center center; }
-      body .carousel .carousel-inner .slider-1 {
-        background-image: url("../img/slider-1.jpg"); }
-      body .carousel .carousel-inner .slider-2 {
-        background-image: url("../img/slider-2.jpg"); }
-      body .carousel .carousel-inner .slider-3 {
-        background-image: url("../img/slider-3.jpg"); }
-      body .carousel .carousel-inner .slider-4 {
-        background-image: url("../img/slider-4.jpg"); }
+        height: 100%; }
+        body .slick .slick-list .slick-track .item {
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position: center center; }
+        body .slick .slick-list .slick-track .slider-1 {
+          background-image: url("../img/slider-1.jpg"); }
+        body .slick .slick-list .slick-track .slider-2 {
+          background-image: url("../img/slider-2.jpg"); }
+        body .slick .slick-list .slick-track .slider-3 {
+          background-image: url("../img/slider-3.jpg"); }
+        body .slick .slick-list .slick-track .slider-4 {
+          background-image: url("../img/slider-4.jpg"); }
   body .bg-carousel-overlay {
     width: 100%;
     height: 100%;
@@ -281,7 +286,7 @@ body {
         body .home-main .hand .phone img {
           width: 100%;
           position: relative; }
-        body .home-main .hand .phone .carousel-control {
+        body .home-main .hand .phone .slick-prev, body .home-main .hand .phone .slick-next {
           position: absolute;
           height: 21%;
           width: 25%;
@@ -289,12 +294,12 @@ body {
           bottom: -30%;
           top: auto;
           opacity: 0; }
-          body .home-main .hand .phone .carousel-control.left {
-            right: 16%;
-            left: auto; }
-          body .home-main .hand .phone .carousel-control.right {
-            left: 17%;
-            right: auto; }
+        body .home-main .hand .phone .slick-next {
+          right: 16%;
+          left: auto; }
+        body .home-main .hand .phone .slick-prev {
+          left: 17%;
+          right: auto; }
         @media screen and (min-width: 1367px) and (min-height: 769px) {
           body .home-main .hand .phone {
             height: 272px;

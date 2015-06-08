@@ -31,34 +31,41 @@ body
   background-color: white
   position: relative
   overflow-x: hidden
-  
-  .carousel
+        
+  .slick-slider
+    margin-bottom: 0
+        
+  .slick
     width: 100%
     height: 100%
     position: absolute
     bottom: 0
-  
-    .carousel-inner
+    
+    .slick-list
       width: 100%
       height: 100%
-    
-      .item
+      
+      .slick-track
         width: 100%
         height: 100%
-        background-size: cover
-        background-position: center center
+    
+        .item
+          width: 100%
+          height: 100%
+          background-size: cover
+          background-position: center center
 
-      .slider-1
-        background-image: url("../img/slider-1.jpg")
-        
-      .slider-2
-        background-image: url("../img/slider-2.jpg")
-        
-      .slider-3
-        background-image: url("../img/slider-3.jpg")
-        
-      .slider-4
-        background-image: url("../img/slider-4.jpg")
+        .slider-1
+          background-image: url("../img/slider-1.jpg")
+
+        .slider-2
+          background-image: url("../img/slider-2.jpg")
+
+        .slider-3
+          background-image: url("../img/slider-3.jpg")
+
+        .slider-4
+          background-image: url("../img/slider-4.jpg")
         
   .bg-carousel-overlay
     width: 100%
@@ -323,7 +330,7 @@ body
           width: 100%
           position: relative
           
-        .carousel-control
+        .slick-prev, .slick-next
           position: absolute
           height: 21%
           width: 25%
@@ -332,13 +339,13 @@ body
           top: auto
           opacity: 0
           
-          &.left
-            right: 16%
-            left: auto
+        .slick-next
+          right: 16%
+          left: auto
 
-          &.right
-            left: 17%
-            right: auto
+        .slick-prev
+          left: 17%
+          right: auto
             
         @media screen and (min-width: 1367px) and (min-height: 769px)
           height: 272px
