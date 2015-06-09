@@ -168,6 +168,9 @@ body {
     body .home-main .action-container {
       display: table;
       padding: 100px 15px; }
+      @media screen and (max-width: 767px) {
+        body .home-main .action-container {
+          padding-bottom: 0; } }
     body .home-main .action {
       height: 100%;
       padding: 0;
@@ -177,7 +180,7 @@ body {
       @media screen and (max-width: 767px) {
         body .home-main .action {
           display: block;
-          margin-top: 150px; } }
+          margin-top: 70px; } }
       body .home-main .action .action-wrapper {
         height: auto; }
         body .home-main .action .action-wrapper h1, body .home-main .action .action-wrapper h2 {
