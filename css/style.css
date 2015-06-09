@@ -464,7 +464,8 @@ body {
       .b-access-main form .check-group input[type="checkbox"] {
         vertical-align: middle;
         margin-left: 4px;
-        margin-top: 1px; }
+        margin-top: 1px;
+        opacity: 0; }
       .b-access-main form .check-group input[type="checkbox"] + label {
         cursor: pointer; }
       .b-access-main form .check-group input[type="checkbox"] + label:before {
