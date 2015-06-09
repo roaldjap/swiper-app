@@ -482,7 +482,8 @@ body {
       float: left;
       margin-top: 10px; }
       .b-access-main form .certify-group .certify {
-        vertical-align: middle; }
+        vertical-align: middle;
+        opacity: 0; }
         .b-access-main form .certify-group .certify + label {
           cursor: pointer; }
         .b-access-main form .certify-group .certify + label:before {
