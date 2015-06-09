@@ -157,7 +157,10 @@ body
             
             @media screen and (max-width: 788px)
               padding: 7px 9px
-          
+              
+            @media screen and (min-width: 768px) and (max-width: 835px)
+              font-size: 12px
+              
             &:focus
               background-color: $primary-red
               color: rgba(white, 0.9)
@@ -167,18 +170,18 @@ body
               color: rgba(white, 1)
             
   .scroll-nav
-    background-color: #fff
+    background-color: rgba(255, 255, 255, 0.9)
     padding-top: 10px
     -webkit-box-shadow: 0px 2px 5px 0px rgba(153,153,153,1)
     -moz-box-shadow: 0px 2px 5px 0px rgba(153,153,153,1)
     box-shadow: 0px 2px 5px 0px rgba(153,153,153,1)
     
   .scroll-nav-home
-    background-color: rgba(51, 60, 69, 0.95)
+    background-color: rgba(255, 255, 255, 0.9)
     padding-top: 10px
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5)
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5)
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5)
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(grey,0.1)
+    -moz-box-shadow: 0px 2px 5px 0px rgba(grey,0.1)
+    box-shadow: 0px 2px 5px 0px rgba(grey,0.1)
             
   .home-main
     height: 100%
@@ -431,3 +434,32 @@ body
             
             &:hover
               color: rgba(white, 1)
+            
+  .mobile-b-access
+    background-color: $primary
+    position: relative
+    padding: 30px 0 40px
+    text-align: center
+    
+    p
+      margin-bottom: 15px
+      font-size: 18px
+      color: darken($primary-grey, 10%)
+    
+    a
+      background-color: $primary-red
+      border-radius: 50px
+      text-transform: none
+      color: rgba(white, 0.9)
+      padding: 10px 40px
+      margin-top: 7px
+      font-size: 18px
+      display: inline-block
+      text-decoration: none
+      
+      &:hover
+        background-color: darken($primary-red, 10%)
+        color: rgba(white, 1)
+      
+      @media screen and (max-width: 480px)
+        width: 100%

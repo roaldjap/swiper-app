@@ -137,6 +137,9 @@ body {
           @media screen and (max-width: 788px) {
             body .main-nav .navbar-collapse .navbar-nav .b-access a {
               padding: 7px 9px; } }
+          @media screen and (min-width: 768px) and (max-width: 835px) {
+            body .main-nav .navbar-collapse .navbar-nav .b-access a {
+              font-size: 12px; } }
           body .main-nav .navbar-collapse .navbar-nav .b-access a:focus {
             background-color: #ff4318;
             color: rgba(255, 255, 255, 0.9); }
@@ -144,17 +147,17 @@ body {
             background-color: #e42a00;
             color: white; }
   body .scroll-nav {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     padding-top: 10px;
     -webkit-box-shadow: 0px 2px 5px 0px #999999;
     -moz-box-shadow: 0px 2px 5px 0px #999999;
     box-shadow: 0px 2px 5px 0px #999999; }
   body .scroll-nav-home {
-    background-color: rgba(51, 60, 69, 0.95);
+    background-color: rgba(255, 255, 255, 0.9);
     padding-top: 10px;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(128, 128, 128, 0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(128, 128, 128, 0.1);
+    box-shadow: 0px 2px 5px 0px rgba(128, 128, 128, 0.1); }
   body .home-main {
     height: 100%; }
     @media screen and (max-width: 767px) {
@@ -377,6 +380,31 @@ body {
             font-size: 12px; }
             body .home-footer .footer-nav ul li a:hover {
               color: white; }
+  body .mobile-b-access {
+    background-color: #ffb518;
+    position: relative;
+    padding: 30px 0 40px;
+    text-align: center; }
+    body .mobile-b-access p {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #555555; }
+    body .mobile-b-access a {
+      background-color: #ff4318;
+      border-radius: 50px;
+      text-transform: none;
+      color: rgba(255, 255, 255, 0.9);
+      padding: 10px 40px;
+      margin-top: 7px;
+      font-size: 18px;
+      display: inline-block;
+      text-decoration: none; }
+      body .mobile-b-access a:hover {
+        background-color: #e42a00;
+        color: white; }
+      @media screen and (max-width: 480px) {
+        body .mobile-b-access a {
+          width: 100%; } }
 
 .b-access-hero {
   background-image: url("../img/b-access-hero.jpg");
@@ -499,5 +527,104 @@ body {
         font-size: 12px; }
         .footer-main .footer-nav ul li a:hover {
           color: black; }
+
+.close-nav {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  z-index: 3; }
+  .close-nav .close-mobile-nav {
+    background-color: transparent;
+    font-size: 40px;
+    color: #a1a1a1; }
+    .close-nav .close-mobile-nav:focus {
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .close-nav .close-mobile-nav:hover {
+      color: #6e6e6e; }
+
+.mobile-nav {
+  margin-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media screen and (max-width: 360px) {
+    .mobile-nav {
+      margin-top: 60px; } }
+  .mobile-nav li .mobile-nav-link {
+    display: inline-block !important;
+    font-size: 18px;
+    color: #6e6e6e; }
+    .mobile-nav li .mobile-nav-link:hover {
+      color: #222222; }
+  .mobile-nav li .nav-link-small {
+    font-size: 13px; }
+  .mobile-nav li .first-small {
+    margin-top: 15px; }
+  .mobile-nav li .download-link {
+    background-color: #ffb518;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-bottom: 10px; }
+    .mobile-nav li .download-link:focus {
+      background-color: #ffb518;
+      color: white; }
+    .mobile-nav li .download-link:hover {
+      background-color: #e49b00;
+      color: white; }
+
+.b-access-mobile {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #d4d4d4; }
+  .b-access-mobile a {
+    display: block;
+    color: white;
+    background-color: #ff4318;
+    border-radius: 30px;
+    padding: 12px 20px;
+    width: 230px;
+    margin: 0 auto;
+    text-decoration: none; }
+    .b-access-mobile a:hover {
+      background-color: #e42a00; }
+    @media screen and (max-width: 500px) {
+      .b-access-mobile a {
+        width: 100%; } }
+
+@media screen and (max-width: 767px) {
+  .sidebar-offcanvas {
+    position: fixed;
+    z-index: 7000;
+    width: 60%;
+    margin-left: 0;
+    margin-right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    background-color: white;
+    -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    -webkit-box-shadow: -2px 0px 5px 0px rgba(153, 153, 153, 0.5);
+    -moz-box-shadow: -2px 0px 5px 0px rgba(153, 153, 153, 0.5);
+    box-shadow: -2px 0px 5px 0px rgba(153, 153, 153, 0.5); }
+  .row-offcanvas-right {
+    right: 0; }
+  .row-offcanvas-left {
+    left: 0; }
+  .row-offcanvas-right.sidebar-offcanvas {
+    right: -62%; }
+  .row-offcanvas-left.sidebar-offcanvas {
+    left: -62%; }
+  .row-offcanvas-right.active {
+    right: 0; }
+  .row-offcanvas-left.active {
+    left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

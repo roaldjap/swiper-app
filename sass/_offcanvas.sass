@@ -1,0 +1,119 @@
+.close-nav
+  text-align: right
+  position: absolute
+  right: 0
+  z-index: 3
+  
+  .close-mobile-nav
+    background-color: transparent
+    font-size: 40px
+    color: lighten($primary-grey, 20%)
+    
+    &:focus
+      outline: 0
+      -webkit-box-shadow: none
+      box-shadow: none
+    
+    &:hover
+      color: $primary-grey
+    
+.mobile-nav
+  margin-top: 30px
+  padding-left: 15px
+  padding-right: 15px
+  
+  @media screen and (max-width: 360px)
+    margin-top: 60px
+  
+  li
+      
+    .mobile-nav-link
+      display: inline-block !important
+      font-size: 18px
+      color: $primary-grey
+      
+      &:hover
+        color: darken($primary-grey, 30%)
+
+    .nav-link-small
+      font-size: 13px
+      
+    .first-small
+      margin-top: 15px
+      
+    .download-link
+      background-color: $primary
+      color: white
+      font-size: 14px
+      text-transform: uppercase
+      border-radius: 20px
+      padding: 10px 25px
+      margin-bottom: 10px
+      
+      &:focus
+        background-color: $primary
+        color: white
+      
+      &:hover
+        background-color: darken($primary, 10%)
+        color: white
+      
+.b-access-mobile
+  text-align: center
+  margin-top: 60px
+  padding-top: 30px
+  padding-bottom: 30px
+  background-color: lighten($primary-grey, 40%)
+
+  a
+    display: block
+    color: white
+    background-color: $primary-red
+    border-radius: 30px
+    padding: 12px 20px
+    width: 230px
+    margin: 0 auto
+    text-decoration: none
+    
+    &:hover
+      background-color: darken($primary-red, 10%)
+    
+    @media screen and (max-width: 500px)
+      width: 100%
+
+@media screen and (max-width: 767px)
+  
+  .sidebar-offcanvas
+    position: fixed
+    z-index: 7000
+    width: 60%
+    margin-left: 0
+    margin-right: 0
+    top: 0
+    bottom: 0
+    overflow-y: auto
+    background-color: white
+    -webkit-transition: all .25s ease-out
+    -o-transition: all .25s ease-out
+    transition: all .25s ease-out
+    -webkit-box-shadow: -2px 0px 5px 0px rgba(153,153,153,0.5)
+    -moz-box-shadow: -2px 0px 5px 0px rgba(153,153,153,0.5)
+    box-shadow: -2px 0px 5px 0px rgba(153,153,153,0.5)
+
+  .row-offcanvas-right
+    right: 0
+
+  .row-offcanvas-left 
+    left: 0
+
+  .row-offcanvas-right.sidebar-offcanvas
+    right: -62%
+    
+  .row-offcanvas-left.sidebar-offcanvas
+    left: -62%
+    
+  .row-offcanvas-right.active
+    right: 0
+    
+  .row-offcanvas-left.active
+    left: 0

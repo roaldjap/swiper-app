@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  
+  "use strict";
   if ($('.slick')[0]) {
     $('.slick').slick({
       arrows: false,
@@ -11,7 +11,7 @@ $(document).ready(function () {
       speed: 500,
       cssEase: 'ease-in',
       swipe: false,
-      pauseOnHover: false,
+      pauseOnHover: false
     });
 
     $('.phone').slick({
@@ -31,35 +31,41 @@ $(document).ready(function () {
   //Select All Checkboxes
   $('#all').click(function (e) {
     if (this.checked) {
-    $('.check').each(function () {
-      this.checked = true;          
-    });
+      $('.check').each(function () {
+        this.checked = true;
+      });
     } else {
-    $('.check').each(function () {
-      this.checked = false;               
-    });         
+      $('.check').each(function () {
+        this.checked = false;
+      });
     }
   });
   
   //Deselect the All checkbox
   $(".check").click(function () {
     if (!$(this).is(":checked")) {
-    $("#all").prop("checked", false);
+      $("#all").prop("checked", false);
     } else {
-    var flag = 0;
-    $(".check").each(function () {
-      if(!this.checked)
-        flag = 1;
-    })              
-    if (flag == 0) { $("#all").prop("checked", true); }
+      var flag = 0;
+      $(".check").each(function () {
+        if (!this.checked) {
+          flag = 1;
+        }
+      });
+      if (flag === 0) { $("#all").prop("checked", true); }
     }
+  });
+  
+  // Off Canvas
+  $('[data-toggle="offcanvas"]').click(function () {
+    $('.sidebar-offcanvas').toggleClass('active')
   });
   
 });
 
 //Fixed Nav Animation on Scroll
 $(window).scroll(function () {
-
+  "use strict";
   var wScroll = $(this).scrollTop();
   
   if ($('.home-main')[0]) {
