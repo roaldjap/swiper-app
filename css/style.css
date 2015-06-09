@@ -492,8 +492,8 @@ body {
         .b-access-main form .certify-group .certify:checked + label:before {
           background: url('../img/check-sprite-small.png') -19px top no-repeat; }
       .b-access-main form .certify-group .certify-label {
-        margin-top: -19px;
-        margin-left: -1px;
+        margin-top: -20px;
+        margin-left: 0;
         font-size: 14px;
         color: #888888; }
     .b-access-main form .signup-btn {
