@@ -57,8 +57,21 @@ $(document).ready(function () {
   });
   
   // Off Canvas
+  var mobNav = 0;
+  
   $('[data-toggle="offcanvas"]').click(function () {
     $('.sidebar-offcanvas').toggleClass('active')
+    if (mobNav == 0) {
+      $('body').css({
+        overflowY: 'hidden' 
+      });
+      mobNav = 1;
+    } else {
+      $('body').css({
+        overflowY: 'auto' 
+      });
+      mobNav = 0;
+    }
   });
   
 });

@@ -527,6 +527,10 @@ body {
         font-size: 12px; }
         .footer-main .footer-nav ul li a:hover {
           color: black; }
+      @media screen and (max-width: 420px) {
+        .footer-main .footer-nav ul li {
+          display: block;
+          margin-bottom: 15px; } }
 
 .close-nav {
   text-align: right;
@@ -567,7 +571,7 @@ body {
     font-size: 14px;
     text-transform: uppercase;
     border-radius: 20px;
-    padding: 10px 25px;
+    padding: 10px 25px 9px;
     margin-bottom: 10px; }
     .mobile-nav li .download-link:focus {
       background-color: #ffb518;
@@ -587,7 +591,7 @@ body {
     color: white;
     background-color: #ff4318;
     border-radius: 30px;
-    padding: 12px 20px;
+    padding: 12px 20px 11px;
     width: 230px;
     margin: 0 auto;
     text-decoration: none; }
@@ -601,7 +605,7 @@ body {
   .sidebar-offcanvas {
     position: fixed;
     z-index: 7000;
-    width: 60%;
+    width: 75%;
     margin-left: 0;
     margin-right: 0;
     top: 0;
@@ -616,15 +620,9 @@ body {
     box-shadow: -2px 0px 5px 0px rgba(153, 153, 153, 0.5); }
   .row-offcanvas-right {
     right: 0; }
-  .row-offcanvas-left {
-    left: 0; }
   .row-offcanvas-right.sidebar-offcanvas {
-    right: -62%; }
-  .row-offcanvas-left.sidebar-offcanvas {
-    left: -62%; }
+    right: -77%; }
   .row-offcanvas-right.active {
-    right: 0; }
-  .row-offcanvas-left.active {
-    left: 0; } }
+    right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
