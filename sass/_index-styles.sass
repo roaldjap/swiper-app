@@ -192,17 +192,16 @@ body
     div, .hand
       height: 100%
       
+    .action-container
+      display: table
+      padding: 100px 15px
+      
     .action
       height: 100%
       padding: 0
       margin: 0
-      display: -webkit-box
-      display: -moz-box
-      display: -ms-flexbox
-      display: -webkit-flex
-      display: flex
-      align-items: center
-      justify-content: center
+      display: table-cell
+      vertical-align: middle
       
       @media screen and (max-width: 767px)
         display: block
@@ -246,7 +245,8 @@ body
           
           input
             font-size: 16px
-            padding: 25px
+            padding: 0 25px
+            min-height: 52px
             border-radius: 10px
             border-top-right-radius: 0
             border-bottom-right-radius: 0
@@ -286,11 +286,12 @@ body
             
             .btn
               font-size: 16px
-              padding: 14px 20px
+              height: 52px
+              padding: 14px 22px
               border-radius: 10px
               border-top-left-radius: 0
               border-bottom-left-radius: 0
-              border-color: $primary
+              border: none
               background-color: $primary
               color: #fff
               text-transform: uppercase
