@@ -1,8 +1,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  font-family: 'Varela Round', sans-serif;
-  overflow-x: hidden; }
+  font-family: 'Varela Round', sans-serif; }
 
 ::selection {
   background: #e49b00;
