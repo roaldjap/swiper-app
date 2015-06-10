@@ -1,0 +1,116 @@
+.blog-hero
+  background-image: url("../img/hero-coming-soon.jpg")
+  background-size: cover
+  background-attachment: fixed
+  background-position: center center
+  
+  h2
+    margin: 250px auto 0
+    color: $primary
+    font-size: 22px
+    text-align: center
+  
+  h1
+    font-size: 32px
+    line-height: 40px
+    color: lighten($primary-grey, 20%)
+    text-align: center
+    display: block
+    width: 100%
+    max-width: 510px
+    margin: 10px auto 30px
+    padding: 10px 30px
+    border-radius: 30px
+
+    @media screen and (max-width: 540px)
+      font-size: 24px
+      line-height: 32px
+      max-width: 400px
+      
+.blog-main
+  background-color: white
+  padding: 50px 0 40px
+
+  p
+    margin-bottom: 20px
+    text-align: center
+    
+  .input-group
+    margin: 40px 0 80px
+    width: 100%
+    
+    input
+      font-size: 16px
+      padding: 0 25px
+      min-height: 52px
+      border-radius: 10px
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+      -webkit-box-shadow: none
+      box-shadow: none
+      border-color: lighten($primary-grey, 20%)
+      
+      &:focus
+        border-color: $primary
+        outline: 0
+        -webkit-box-shadow: inset 0 1px 1px rgba($primary-red,.075),0 0 8px rgba($primary-red,.6)
+        box-shadow: inset 0 1px 1px rgba($primary-red,.075),0 0 8px rgba($primary-red,.6)
+      
+      @media screen and (min-width: 768px) and (max-width: 991px)
+        display: block
+        float: left
+        border-top-right-radius: 10px !important
+        border-bottom-left-radius: 0
+        
+      @media screen and (max-width: 480px)
+        display: block
+        float: left
+        border-top-right-radius: 10px !important
+        border-bottom-left-radius: 0
+        
+    .input-group-btn
+      
+      @media screen and (min-width: 768px) and (max-width: 991px)
+        display: block
+        float: left
+        width: 100%
+        
+      @media screen and (max-width: 480px)
+        display: block
+        float: left
+        width: 100%
+        
+      .btn
+        font-size: 16px
+        height: 52px
+        padding: 14px 22px
+        margin-left: -1px
+        border-radius: 10px
+        border-top-left-radius: 0
+        border-bottom-left-radius: 0
+        border: none
+        background-color: $primary
+        color: #fff
+        text-transform: uppercase
+        outline: none
+        z-index: 2
+        
+        &:hover
+          background-color: darken($primary, 15%)
+          border-color: darken($primary, 12%)
+        
+        @media screen and (min-width: 768px) and (max-width: 991px)
+          border-top-right-radius: 0
+          border-bottom-left-radius: 10px
+          width: 100%
+          margin: -1px 0 0
+          
+        @media screen and (max-width: 480px)
+          border-top-right-radius: 0
+          border-bottom-left-radius: 10px
+          width: 100%
+          margin: -1px 0 0
+          
+  img
+    display: block
+    margin: 0 auto

@@ -1,6 +1,7 @@
 .b-access-hero
   background-image: url("../img/b-access-hero.jpg")
   background-size: cover
+  background-attachment: fixed
   background-position: top center
   
   h1
@@ -32,7 +33,7 @@
     margin-bottom: 15px
     
   p
-    margin-bottom: 20px;
+    margin-bottom: 20px
     
   form
     color: $primary-grey
@@ -153,6 +154,9 @@
           
           &:hover
             color: black
+          
+        .active
+          color: $primary
           
         @media screen and (max-width: 420px)
           display: block
