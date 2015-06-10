@@ -85,7 +85,11 @@ body
       
     .navbar-brand
       height: auto
+      width: 185px
       padding: 10px 15px 15px 30px
+      
+      img
+        width: 100%
       
     .navbar-collapse
       padding-right: 15px
@@ -424,6 +428,7 @@ body
       
       ul
         padding-left: 10px
+        padding-right: 10px
         margin-bottom: 0
         
         li
@@ -436,14 +441,24 @@ body
             text-decoration: none
             text-transform: uppercase
             font-size: 12px
+            line-height: 24px
             
             &:hover
               color: rgba(white, 1)
             
+        .copyright
+          position: relative
+          z-index: 3
+          
+          p
+            color: rgba(white, 0.75)
+            font-size: 12px
+            margin-right: 15px
+            
   .mobile-b-access
     background-color: $primary
     position: relative
-    padding: 30px 0 40px
+    padding: 30px 0 15px
     text-align: center
     
     p
@@ -468,3 +483,9 @@ body
       
       @media screen and (max-width: 480px)
         width: 100%
+        
+    .mob-copyright
+      margin-top: 40px
+      
+      p
+        font-size: 13px
