@@ -494,7 +494,7 @@ body {
         vertical-align: middle;
         background: url('../img/check-sprite.png') left top no-repeat; }
       .b-access-main form .check-group input[type="checkbox"]:checked + label:before {
-        background: url('../img/check-sprite.png') -29px top no-repeat; }
+        background: url('../img/check-sprite.png') -35px top no-repeat; }
     .b-access-main form .certify-group {
       float: left;
       margin-top: 10px; }
