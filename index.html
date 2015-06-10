@@ -185,8 +185,7 @@
   <script src="js/custom.js"></script>
   <script>
     if (navigator.userAgent.match(/iPad;.*CPU.*OS 7_\d/i)) {
-      $('html').addClass('ipad ios7');
-      $('html.ipad.ios7').height(window.innerHeight);
+      $('html, body').height(window.innerHeight);
       window.scrollTo(0, 0);
     }
   </script>
