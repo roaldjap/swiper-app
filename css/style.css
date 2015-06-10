@@ -2,7 +2,7 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: 'Varela Round', sans-serif;
-  -webkit-backface-visibility: hidden; }
+  overflow-x: hidden; }
 
 ::selection {
   background: #e49b00;
@@ -34,8 +34,7 @@ p {
 
 body {
   background-color: white;
-  position: relative;
-  overflow-x: hidden; }
+  position: relative; }
   body .slick-slider {
     margin-bottom: 0; }
   body .slick {
