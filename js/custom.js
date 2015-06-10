@@ -90,7 +90,7 @@ $(window).scroll(function () {
       $('.nav-link').removeClass('scroll-link');
     }
   } else {
-    if (wScroll > $('.main').offset().top - 200) {
+    if (wScroll > $('.hero').offset().top + 80) {
       $('.main-nav').addClass('scroll-nav');
       $('.nav-link').addClass('scroll-link');
     } else {

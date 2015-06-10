@@ -172,21 +172,23 @@ body {
     body .home-main div, body .home-main .hand {
       height: 100%; }
     body .home-main .action-container {
-      display: table;
-      padding: 100px 15px; }
+      padding: 0 15px; }
       @media screen and (max-width: 767px) {
         body .home-main .action-container {
           padding-bottom: 0; } }
     body .home-main .action {
-      height: 100%;
+      height: 320px;
       padding: 0;
-      margin: 0;
-      display: table-cell;
-      vertical-align: middle; }
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0; }
       @media screen and (max-width: 767px) {
         body .home-main .action {
           display: block;
-          margin-top: 70px; } }
+          height: auto;
+          margin-top: 150px;
+          position: relative; } }
       body .home-main .action .action-wrapper {
         height: auto; }
         body .home-main .action .action-wrapper h1, body .home-main .action .action-wrapper h2 {
