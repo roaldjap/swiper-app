@@ -211,7 +211,7 @@ body
       padding: 0 15px
       
       @media screen and (max-width: 767px)
-        padding-bottom: 0
+        padding-bottom: 50px
       
     .action
       height: 320px
@@ -226,6 +226,7 @@ body
         height: auto
         margin-top: 150px
         position: relative
+        padding-right: 0
       
       .action-wrapper
         height: auto
@@ -349,12 +350,12 @@ body
       margin-right: -15px
       
       .phone
-        height: 220px
-        width: 189px
+        height: 184px
+        width: 157px
         position: absolute
         background-color: transparent
-        bottom: 253px
-        left: 80px
+        bottom: 209px
+        left: 66px
         z-index: 3
           
         img
@@ -389,7 +390,19 @@ body
           width: 233px
           bottom: 311px
           left: 98px
-
+          
+        @media screen and (min-width: 768px) and (max-width: 991px)
+          height: 169px
+          width: 146px
+          bottom: 195px
+          left: 61px
+          
+        @media screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait)
+          height: 254px
+          width: 217px
+          bottom: 290px
+          left: 92px
+          
         @media screen and (max-width: 767px)
           bottom: 209px
           left: 50%
@@ -397,17 +410,11 @@ body
           height: 180px
           width: 156px
           
-        @media screen and (min-width: 768px) and (max-width: 1199px)
-          height: 264px
-          width: 217px
-          bottom: 280px
-          left: 92px
-          
-        @media screen and (min-width : 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)
-          height: 267px
-          width: 190px
-          bottom: 209px
-          left: 80px
+        @media screen and (height: 768px) and (width: 1024px)
+          height: 203px
+          width: 171px
+          bottom: 224px
+          left: 72px
       
       & > img
         position: absolute
@@ -422,7 +429,7 @@ body
         @media screen and (min-width: 1367px) and (min-height: 769px)
           width: 600px
           
-        @media screen and (min-width: 768px) and (max-width: 1199px)
+        @media screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait)
           width: 560px
           
         @media screen and (max-width: 767px)
@@ -430,11 +437,10 @@ body
           bottom: 0
           left: 50%
           width: 400px
-          margin-top: 50px
           margin-left: -145px
           
-        @media screen and (min-width : 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)
-          width: 490px
+        @media screen and (height: 768px) and (width: 1024px)
+          width: 440px
             
   .home-footer
     position: absolute
