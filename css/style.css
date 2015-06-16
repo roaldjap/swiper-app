@@ -680,8 +680,10 @@ body {
   .footer-main .footer-nav .copyright {
     text-align: center;
     margin-top: 25px;
-    font-size: 13px;
-    color: #888888; }
+    display: block; }
+    .footer-main .footer-nav .copyright p {
+      font-size: 13px;
+      color: #888888; }
 
 .blog-hero {
   background-image: url("../img/hero-coming-soon.jpg");
