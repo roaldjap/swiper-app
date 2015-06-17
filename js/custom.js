@@ -31,23 +31,23 @@ $(document).ready(function () {
   //Select All Checkboxes
   $('#all').click(function (e) {
     if (this.checked) {
-      $('.check').each(function () {
+      $('.check-group input[type="checkbox"]').each(function () {
         this.checked = true;
       });
     } else {
-      $('.check').each(function () {
+      $('.check-group input[type="checkbox"]').each(function () {
         this.checked = false;
       });
     }
   });
   
   //Deselect the All checkbox
-  $(".check").click(function () {
+  $('.check-group input[type="checkbox"]').click(function () {
     if (!$(this).is(":checked")) {
       $("#all").prop("checked", false);
     } else {
       var flag = 0;
-      $(".check").each(function () {
+      $('.check-group input[type="checkbox"]').each(function () {
         if (!this.checked) {
           flag = 1;
         }
@@ -60,15 +60,15 @@ $(document).ready(function () {
   var mobNav = 0;
   
   $('[data-toggle="offcanvas"]').click(function () {
-    $('.sidebar-offcanvas').toggleClass('active')
-    if (mobNav == 0) {
+    $('.sidebar-offcanvas').toggleClass('active');
+    if (mobNav === 0) {
       $('body').css({
-        overflowY: 'hidden' 
+        overflowY: 'hidden'
       });
       mobNav = 1;
     } else {
       $('body').css({
-        overflowY: 'auto' 
+        overflowY: 'auto'
       });
       mobNav = 0;
     }
@@ -89,7 +89,7 @@ $(window).scroll(function () {
       $('.main-nav').removeClass('scroll-nav-home');
       $('.nav-link').removeClass('scroll-link');
     }
-  } else {
+  } else if ($('.hero')[0]) {
     if (wScroll > $('.hero').offset().top + 80) {
       $('.main-nav').addClass('scroll-nav');
       $('.nav-link').addClass('scroll-link');

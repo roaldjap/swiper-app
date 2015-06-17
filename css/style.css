@@ -1,8 +1,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  font-family: 'Varela Round', sans-serif;
-  overflow-x: hidden; }
+  font-family: 'Varela Round', sans-serif; }
 
 ::selection {
   background: #e49b00;
@@ -41,7 +40,8 @@ p {
 
 body {
   background-color: white;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   body .slick-slider {
     margin-bottom: 0; }
   body .slick {
@@ -691,7 +691,8 @@ body {
         vertical-align: middle;
         margin-left: 4px;
         margin-top: 1px;
-        opacity: 0; }
+        opacity: 0;
+        cursor: pointer; }
       .b-access-main form .check-group input[type="checkbox"] + label {
         cursor: pointer; }
       .b-access-main form .check-group input[type="checkbox"] + label:before {
