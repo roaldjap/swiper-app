@@ -220,7 +220,7 @@ body {
               line-height: 42px; } }
           @media screen and (max-width: 480px) {
             body .home-main .action .action-wrapper h1 {
-              font-size: 34px;
+              font-size: 26px;
               line-height: 38px; } }
         body .home-main .action .action-wrapper h2 {
           font-size: 18px;
