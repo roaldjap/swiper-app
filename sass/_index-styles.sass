@@ -212,6 +212,9 @@ body
       
       @media screen and (max-width: 767px)
         padding-bottom: 50px
+        
+      @media screen and (max-width: 480px)
+        padding-bottom: 30px
       
     .action
       height: 320px
@@ -227,6 +230,9 @@ body
         margin-top: 150px
         position: relative
         padding-right: 0
+        
+      @media screen and (max-width: 480px)
+        margin-top: 120px
       
       .action-wrapper
         height: auto
@@ -247,7 +253,7 @@ body
             line-height: 42px
             
           @media screen and (max-width: 480px)
-            font-size: 32px
+            font-size: 34px
             line-height: 38px
 
         h2
@@ -479,6 +485,101 @@ body
             color: rgba(white, 0.75)
             font-size: 12px
             margin-right: 15px
+            
+  .signup-mobile
+    background-color: white
+    position: relative
+    padding: 30px 0
+    
+    p
+      font-size: 18px
+      text-align: center
+      
+    .input-group
+      margin-top: 20px
+      font-family: $font-main
+      
+      @media screen and (min-width: 768px) and (max-width: 991px)
+        width: 100%
+        
+      @media screen and (max-width: 480px)
+        width: 100%
+        
+      input
+        font-size: 16px
+        padding: 0 25px
+        min-height: 52px
+        border-radius: 10px
+        border-top-right-radius: 0
+        border-bottom-right-radius: 0
+        -webkit-box-shadow: none
+        box-shadow: none
+        border-color: lighten($primary-grey, 20%)
+        
+        &:focus
+          border-color: $primary
+          outline: 0
+          -webkit-box-shadow: inset 0 1px 1px rgba($primary-red,.075),0 0 8px rgba($primary-red,.6)
+          box-shadow: inset 0 1px 1px rgba($primary-red,.075),0 0 8px rgba($primary-red,.6)
+        
+        @media screen and (min-width: 768px) and (max-width: 991px)
+          display: block
+          float: left
+          border-top-right-radius: 10px !important
+          border-bottom-left-radius: 0
+          
+        @media screen and (max-width: 480px)
+          display: block
+          float: left
+          border-top-right-radius: 10px !important
+          border-bottom-left-radius: 0
+          
+      .input-group-btn
+
+        @media screen and (min-width: 768px) and (max-width: 991px)
+          display: block
+          float: left
+          width: 100%
+
+        @media screen and (max-width: 480px)
+          display: block
+          float: left
+          width: 100%
+
+        .btn
+          font-size: 16px
+          height: 52px
+          padding: 14px 22px
+          margin-left: -1px
+          border-radius: 10px
+          border-top-left-radius: 0
+          border-bottom-left-radius: 0
+          border: none
+          background-color: $primary
+          color: #fff
+          text-transform: uppercase
+          outline: none
+          z-index: 2
+
+          &:hover
+            z-index: 1
+            background-color: darken($primary, 15%)
+            border-color: darken($primary, 12%)
+
+          &:focus
+            z-index: 1
+
+          @media screen and (min-width: 768px) and (max-width: 991px)
+            border-top-right-radius: 0
+            border-bottom-left-radius: 10px
+            width: 100%
+            margin: -1px 0 0
+
+          @media screen and (max-width: 480px)
+            border-top-right-radius: 0
+            border-bottom-left-radius: 10px
+            width: 100%
+            margin: -1px 0 0
             
   .mobile-b-access
     background-color: $primary
