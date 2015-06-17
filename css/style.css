@@ -202,7 +202,7 @@ body {
           padding-right: 0; } }
       @media screen and (max-width: 480px) {
         body .home-main .action {
-          margin-top: 105px; } }
+          margin-top: 95px; } }
       body .home-main .action .action-wrapper {
         height: auto; }
         body .home-main .action .action-wrapper h1, body .home-main .action .action-wrapper h2 {
@@ -220,8 +220,8 @@ body {
               line-height: 42px; } }
           @media screen and (max-width: 480px) {
             body .home-main .action .action-wrapper h1 {
-              font-size: 32px;
-              line-height: 38px; } }
+              font-size: 30px;
+              line-height: 36px; } }
         body .home-main .action .action-wrapper h2 {
           font-size: 18px;
           line-height: 24px;
