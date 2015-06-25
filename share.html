@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog - Swiper</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top main-nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="img/swiper-logo.png" alt="Swiper Logo">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse pull-right" id="main-nav">
+          <ul class="nav navbar-nav">
+            <li><a href="blog.html" class="nav-link active">Blog</a>
+            </li>
+            <li><a href="support.html" class="nav-link">Support</a>
+            </li>
+            <li><a href="jobs.html" class="nav-link">Jobs</a>
+            </li>
+            <li><a href="press.html" class="nav-link">Press</a>
+            </li>
+            <li><a href="share.html" class="nav-link">Share</a>
+            </li>
+            <li class="b-access"><a href="b-access.html">Bloggers &amp; Publishers Access</a>
+            </li>
+            <li><a href="contact.html" class="nav-link nav-link-small visible-xs">Contact</a>
+            </li>
+            <li><a href="privacy-terms.html" class="nav-link nav-link-small visible-xs">Privacy &amp; Terms</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="col-xs-6 row-offcanvas-right visible-xs sidebar-offcanvas">
+      <div class="row">
+        <div class="close-nav">
+          <button type="button" class="close-mobile-nav btn" data-toggle="offcanvas">&times;</button>
+        </div>
+        <ul class="nav mobile-nav">
+          <li><a href="/" class="mobile-nav-link download-link">Sign Up for Beta</a>
+          </li>
+          <li><a href="blog.html" class="mobile-nav-link">Blog</a>
+          </li>
+          <li><a href="support.html" class="mobile-nav-link">Support</a>
+          </li>
+          <li><a href="jobs.html" class="mobile-nav-link">Jobs</a>
+          </li>
+          <li><a href="press.html" class="mobile-nav-link">Press</a>
+          </li>
+          <li><a href="share.html" class="mobile-nav-link">Share</a>
+          </li>
+          <li><a href="contact.html" class="mobile-nav-link nav-link-small visible-xs first-small">Contact</a>
+          </li>
+          <li><a href="privacy-terms.html" class="mobile-nav-link nav-link-small visible-xs">Privacy &amp; Terms</a>
+          </li>
+        </ul>
+        <div class="b-access-mobile col-xs-12">
+          <a href="b-access.html">Blogger &amp; Publisher Access</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero share-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Share Swiper</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main share-main">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="alert alert-success alert-dismissible fade in" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Thanks for sharing Swiper! Your friends will receive an email shortly.
+            </div>
+            <h2>Share Swiper with 5 of your cool and trendy friends!</h2>
+            <p>Support Swiper and share with our ever cool and ever growing network of friends and swipers! Please add their emails below:</p>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="friend1" class="col-sm-3">Friend 1</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="friend1" placeholder="Add friend's email address" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="friend2" class="col-sm-3">Friend 2</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="friend2" placeholder="Add friend's email address" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="friend3" class="col-sm-3">Friend 3</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="friend3" placeholder="Add friend's email address" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="friend4" class="col-sm-3">Friend 4</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="friend4" placeholder="Add friend's email address" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="friend5" class="col-sm-3">Friend 5</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="friend5" placeholder="Add friend's email address" required>
+                </div>
+              </div>
+
+              <div class="form-group submit-group">
+                  <button type="submit" class="btn submit-btn">Submit</button>
+              </div>
+
+            </form>
+            
+            <div class="hr-group">
+              <hr/>
+              <span>And</span>
+            </div>
+            
+            <h2>Share Swiper on social media!</h2>
+            <p>Click on any of the social media icons below to share Swiper!</p>
+            
+            <div class="social-icon-group">
+              <a href="#" class="social-icon">
+                <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span>
+              </a>
+              <a href="#" class="social-icon">
+                <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span>
+              </a>
+              <a href="#" class="social-icon">
+                <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span>
+              </a>
+              <a href="#" class="social-icon">
+                <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-tumblr fa-stack-1x fa-inverse"></i></span>
+              </a>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-main">
+      <div class="container-fluid footer-nav">
+        <ul class="clearfix">
+          <li><a href="contact.html">Contact</a>
+          </li>
+          <li><a href="privacy-terms.html">Privacy &amp; Terms</a>
+          </li>
+          <li><a href="safety.html">Safety</a>
+          </li>
+          <li class="copyright"><p>Swiper is a trademark of Fetch Plus. &copy; Copyright 2015</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+
+</html>

@@ -10,7 +10,7 @@
                 "sourceComments": false,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": false,
+            "linting.collapsed": true,
             "fonts.fontSize": "10px"
         }
     }
