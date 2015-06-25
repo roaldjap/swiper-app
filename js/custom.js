@@ -1,5 +1,6 @@
 $(document).ready(function () {
   "use strict";
+  
   if ($('.slick')[0]) {
     $('.slick').slick({
       arrows: false,
