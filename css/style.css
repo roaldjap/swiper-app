@@ -908,6 +908,28 @@ body {
         line-height: 32px;
         max-width: 400px; } }
 
+.pricing-hero {
+  background-image: url("../img/Pricing-Header.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: top center; }
+  .pricing-hero h1 {
+    font-size: 32px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 250px auto 30px;
+    padding: 10px 30px;
+    border-radius: 30px; }
+    @media screen and (max-width: 540px) {
+      .pricing-hero h1 {
+        font-size: 24px;
+        line-height: 32px;
+        max-width: 400px; } }
+
 .share-main {
   background-color: white;
   padding: 50px 0 40px; }
@@ -916,6 +938,13 @@ body {
     line-height: 44px;
     color: #ffb518;
     margin-bottom: 15px; }
+  .share-main .pricing-h2 {
+    font-size: 32px; }
+  .share-main h3 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #6e6e6e;
+    margin-bottom: 30px; }
   .share-main p {
     margin-bottom: 30px; }
   .share-main form {
@@ -977,5 +1006,28 @@ body {
       color: #555555; }
       .share-main .social-icon-group .social-icon:hover {
         color: #6e6e6e; }
+  .share-main .well .credits-table {
+    margin-top: 10px; }
+  .share-main .well h3 {
+    margin-bottom: 15px; }
+  .share-main .well h4 {
+    color: #6e6e6e;
+    line-height: 24px; }
+  .share-main .well ul {
+    margin-top: 15px;
+    margin-bottom: 40px; }
+    .share-main .well ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #6e6e6e; }
+  .share-main .well span {
+    display: inline-block;
+    margin-right: 20px; }
+
+.yellow-heading {
+  color: #ffb518 !important; }
+
+.yellow-dark-heading {
+  color: #ff7d01 !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,6 +21,29 @@
       line-height: 32px
       max-width: 400px
       
+.pricing-hero
+  background-image: url("../img/Pricing-Header.jpg")
+  background-size: contain
+  background-attachment: fixed
+  background-position: top center
+
+  h1
+    font-size: 32px
+    line-height: 40px
+    color: white
+    text-align: center
+    display: block
+    width: 100%
+    max-width: 550px
+    margin: 250px auto 30px
+    padding: 10px 30px
+    border-radius: 30px
+
+    @media screen and (max-width: 540px)
+      font-size: 24px
+      line-height: 32px
+      max-width: 400px
+      
 .share-main
   background-color: white
   padding: 50px 0 40px
@@ -30,6 +53,15 @@
     line-height: 44px
     color: $primary
     margin-bottom: 15px
+    
+  .pricing-h2
+    font-size: 32px
+  
+  h3
+    font-size: 24px
+    line-height: 36px
+    color: $primary-grey
+    margin-bottom: 30px
 
   p
     margin-bottom: 30px
@@ -108,3 +140,34 @@
       
       &:hover
         color: $primary-grey
+      
+  .well
+    
+    .credits-table
+      margin-top: 10px
+    
+    h3
+      margin-bottom: 15px
+      
+    h4
+      color: $primary-grey
+      line-height: 24px
+      
+    ul
+      margin-top: 15px
+      margin-bottom: 40px
+      
+      li
+        margin-bottom: 10px
+        font-size: 16px
+        color: $primary-grey
+        
+    span
+      display: inline-block
+      margin-right: 20px
+      
+.yellow-heading
+  color: $primary !important;
+  
+.yellow-dark-heading
+  color: $primary-dark !important;
