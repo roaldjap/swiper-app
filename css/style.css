@@ -262,46 +262,48 @@ body {
                 float: left;
                 border-top-right-radius: 10px;
                 border-bottom-left-radius: 0; } }
-          @media screen and (min-width: 768px) and (max-width: 991px) {
-            body .home-main .action .action-wrapper .input-group .input-group-btn {
-              display: block;
-              float: left;
-              width: 100%; } }
-          @media screen and (max-width: 480px) {
-            body .home-main .action .action-wrapper .input-group .input-group-btn {
-              display: block;
-              float: left;
-              width: 100%; } }
-          body .home-main .action .action-wrapper .input-group .input-group-btn .btn {
-            font-size: 16px;
-            height: 52px;
-            padding: 14px 22px;
-            border-radius: 10px;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-            border: none;
-            background-color: #ffb518;
-            color: #fff;
-            text-transform: uppercase;
-            outline: none; }
-            body .home-main .action .action-wrapper .input-group .input-group-btn .btn:hover {
-              z-index: 1;
-              background-color: #cb8a00;
-              border-color: #da9400; }
-            body .home-main .action .action-wrapper .input-group .input-group-btn .btn:focus {
-              z-index: 1; }
+          body .home-main .action .action-wrapper .input-group .input-group-btn {
+            vertical-align: top; }
             @media screen and (min-width: 768px) and (max-width: 991px) {
-              body .home-main .action .action-wrapper .input-group .input-group-btn .btn {
-                border-top-right-radius: 0;
-                border-bottom-left-radius: 10px;
-                width: 100%;
-                margin: 0; } }
+              body .home-main .action .action-wrapper .input-group .input-group-btn {
+                display: block;
+                float: left;
+                width: 100%; } }
             @media screen and (max-width: 480px) {
-              body .home-main .action .action-wrapper .input-group .input-group-btn .btn {
-                border-top-right-radius: 0;
-                border-bottom-left-radius: 10px;
-                width: 100%;
-                margin: 0; } }
+              body .home-main .action .action-wrapper .input-group .input-group-btn {
+                display: block;
+                float: left;
+                width: 100%; } }
+            body .home-main .action .action-wrapper .input-group .input-group-btn .btn {
+              font-size: 16px;
+              height: 52px;
+              padding: 14px 22px;
+              border-radius: 10px;
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+              border: none;
+              background-color: #ffb518;
+              color: #fff;
+              text-transform: uppercase;
+              outline: none; }
+              body .home-main .action .action-wrapper .input-group .input-group-btn .btn:hover {
+                z-index: 1;
+                background-color: #cb8a00;
+                border-color: #da9400; }
+              body .home-main .action .action-wrapper .input-group .input-group-btn .btn:focus {
+                z-index: 1; }
+              @media screen and (min-width: 768px) and (max-width: 991px) {
+                body .home-main .action .action-wrapper .input-group .input-group-btn .btn {
+                  border-top-right-radius: 0;
+                  border-bottom-left-radius: 10px;
+                  width: 100%;
+                  margin: 0; } }
+              @media screen and (max-width: 480px) {
+                body .home-main .action .action-wrapper .input-group .input-group-btn .btn {
+                  border-top-right-radius: 0;
+                  border-bottom-left-radius: 10px;
+                  width: 100%;
+                  margin: 0; } }
     @media screen and (max-width: 767px) {
       body .home-main .hand-container {
         overflow-x: hidden; } }
