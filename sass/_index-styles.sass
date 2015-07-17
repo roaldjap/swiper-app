@@ -205,7 +205,8 @@ body
       height: auto
     
     div, .hand
-      height: 100%
+      @media screen and (min-width: 768px)
+        height: 100%
       
     .action-container
       padding: 0 15px
@@ -350,6 +351,7 @@ body
       
       @media screen and (max-width: 767px)
         overflow-x: hidden
+        height: auto
                 
     .hand
       position: relative
