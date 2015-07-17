@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration - Swiper</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Jquery - TagsInput -->
+    <link rel="stylesheet" href="bower_components/jquery-tagsinput/src/jquery.tagsinput.css">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top main-nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="img/swiper-logo.png" alt="Swiper Logo">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse pull-right" id="main-nav">
+          <ul class="nav navbar-nav">
+            <li><a href="share.html" class="nav-link">Share</a>
+            </li>
+            <li><a href="pricing.html" class="nav-link active">Swiper for Business</a>
+            </li>
+            <li class="b-access"><a href="b-access.html">Bloggers &amp; Publishers Access</a>
+            </li>
+            <li><a href="contact.html" class="nav-link nav-link-small visible-xs">Contact</a>
+            </li>
+            <li><a href="privacy-terms.html" class="nav-link nav-link-small visible-xs">Privacy &amp; Terms</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="col-xs-6 row-offcanvas-right visible-xs sidebar-offcanvas">
+      <div class="row">
+        <div class="close-nav">
+          <button type="button" class="close-mobile-nav btn" data-toggle="offcanvas">&times;</button>
+        </div>
+        <ul class="nav mobile-nav">
+          <li><a href="/" class="mobile-nav-link download-link">Sign Up for Beta</a>
+          </li>
+          <li><a href="blog.html" class="mobile-nav-link">Blog</a>
+          </li>
+          <li><a href="support.html" class="mobile-nav-link">Support</a>
+          </li>
+          <li><a href="jobs.html" class="mobile-nav-link">Jobs</a>
+          </li>
+          <li><a href="press.html" class="mobile-nav-link">Press</a>
+          </li>
+          <li><a href="share.html" class="mobile-nav-link">Share</a>
+          </li>
+          <li><a href="contact.html" class="mobile-nav-link nav-link-small visible-xs first-small">Contact</a>
+          </li>
+          <li><a href="privacy-terms.html" class="mobile-nav-link nav-link-small visible-xs">Privacy &amp; Terms</a>
+          </li>
+        </ul>
+        <div class="b-access-mobile col-xs-12">
+          <a href="b-access.html">Blogger &amp; Publisher Access</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero register-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Swiper Registration</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main register-main">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="alert alert-success alert-dismissible fade in" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Thanks for choosing Swiper!
+            </div>
+            <form>
+            
+            <!-- Welcome! Fields -->
+            <h2 class="form-head">Company Details</h2>
+            <div class="well">
+                <p class="required-note"> <span class="required-mark">*</span> required fields </p>
+                <div class="form-group">
+                  <label for="customer-id">Customer ID</label>
+                  <input type="text" class="form-control" id="customer-id" value="xxxxxxxxxxxxxxx"/>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label for="first-name">First Name <span class="required-mark">*</span></label>
+                      <input type="text" class="form-control" id="first-name"/>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="last-name">Last Name <span class="required-mark">*</span></label>
+                      <input type="text" class="form-control" id="last-name"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label for="street-1">Street 1</label>
+                      <input type="text" class="form-control" id="street-1"/>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="street-2">Street 2</label>
+                      <input type="text" class="form-control" id="street-2"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label for="city">City</label>
+                      <input type="text" class="form-control" id="city"/>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="suburb">Suburb</label>
+                      <input type="text" class="form-control" id="suburb"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label for="state">State</label>
+                      <input type="text" class="form-control" id="state"/>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="post-code">Post Code</label>
+                      <input type="text" class="form-control" id="post-code"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label for="published-phone">Published Phone</label>
+                      <input type="text" class="form-control" id="published-phone"/>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="landline-number">Landline number</label>
+                      <input type="text" class="form-control" id="landline-number"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label for="mobile-number">Mobile Number</label>
+                      <input type="text" class="form-control" id="mobile-number"/>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="abn">ABN</label>
+                      <input type="text" class="form-control" id="abn"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label for="published-email">Published Email</label>
+                      <input type="text" class="form-control" id="published-email"/>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="business-email">Business Email <span class="required-mark">*</span></label>
+                      <input type="text" class="form-control" id="business-email"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="company-name">Company Name <span class="required-mark">*</span></label>
+                  <input type="text" class="form-control" id="company-name" value=""/>
+                </div>
+
+                <div class="form-group">
+                  <label for="link">Link</label>
+                  <input type="text" class="form-control" id="link" value=""/>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <label for="industry">Industry <span class="required-mark">*</span></label>
+                      <select class="form-control">
+                        <option>Engineering</option>
+                        <option>Technology</option>
+                        <option>Fashion</option>
+                      </select>
+
+                      <div class="form-group">
+                        <input type="checkbox" class="check" id="sell-consumers" value="sell-consumers" ><label class="checklabel" for="sell-consumers">Sell to Consumers</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" class="check" id="sell-enterprise" value="sell-enterprise" ><label class="checklabel" for="sell-enterprise">Sell to Enterprise</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <label for="ad-spend">Ad Spend</label>
+                      <input type="text" class="form-control" id="ad-spend"/>
+                      <div class="form-group">
+                        <input type="checkbox" class="check" id="sell-developers" value="sell-developers" ><label class="checklabel" for="sell-developers">Sell to Developers</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" class="check" id="sell-smb" value="sell-smb" ><label class="checklabel" for="sell-smb">Sell to SMB</label>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="description">Description</label>
+                  <textarea class="form-control" id="description"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="keywords">Keywords</label>
+                   <textarea class="form-control" id="keywords" placeholder="Add a Keyword..."></textarea>
+                </div> 
+            </div>
+
+            <!-- Region Selection-->
+            <h2 class="form-head">Region Selection</h2>
+            <div class="well">
+              <div class="form-group">
+                <label for="region">Region</label>
+                <select id="region" class="form-control">
+                  <option>Manila</option>
+                  <option>Melbourne</option>
+                  <option>Perth</option>
+                  <option>Singapore</option>
+                  <option>Sydney</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- SubCOI Selection-->
+            <h2 class="form-head">SubCOI Selection</h2>
+            <div class="well">
+              <div class="form-group">
+                <label for="subCOI">Select your Subcategory of Interest</label>
+                <select id="subCOI" class="form-control">
+                  <option>Engineering</option>
+                  <option>Technology</option>
+                  <option>Fashion</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Package Selection -->
+            <h2 class="form-head">Package Selection</h2>
+            <div class="well">
+              <div class="form-group">
+                <label for="business-card">Business Card</label>
+                <select id="business-card" class="form-control">
+                  <option>Free : $ 0.00 / month (0 Business Credits / Month)</option>
+                  <option>Silver : $ 0.00 / month (0 Business Credits / Month)</option>
+                  <option>Gold : $ 0.00 / month (0 Business Credits / Month)</option>
+                  <option>Platinum : $ 0.00 / month (0 Business Credits / Month)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="offer-card">Offer Card</label>
+                <select id="offer-card" class="form-control">
+                  <option>None</option>
+                  <option>Silver : $ 0.00 / month (0 Offer Credits / Month)</option>
+                  <option>Gold : $ 0.00 / month (0 Offer Credits / Month)</option>
+                  <option>Platinum : $ 0.00 / month (0 Offer Credits / Month)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Terms & Conditions -->
+            <hr>
+            <div class="container">
+              <div class="form-group">
+                    <input type="checkbox" class="check" id="sell-consumers" value="pull-contact-to-billing" ><label class="checklabel" for="sell-consumers">Pull Contact Details into Billing Details</label>
+              </div>
+              <div class="form-group">
+                    <input type="checkbox" class="check" id="sell-consumers" value="agree-terms" ><label class="checklabel" for="sell-consumers">I agree to terms and conditions</label>
+              </div>
+            </div>
+            <div class="form-group submit-group">
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </div>
+
+            </form>
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-main">
+      <div class="container-fluid footer-nav">
+        <ul class="clearfix">
+          <li><a href="contact.html">Contact</a>
+          </li>
+          <li><a href="privacy-terms.html">Privacy &amp; Terms</a>
+          </li>
+          <li><a href="safety.html">Safety</a>
+          </li>
+          <li class="copyright"><p>Swiper is a trademark of Fetch Plus. &copy; Copyright 2015</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/jquery-tagsinput/src/jquery.tagsinput.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("#keywords").tagsInput();
+          $(".tagsinput").addClass('form-control');
+      })
+    </script>
+
+  </body>
+
+</html>

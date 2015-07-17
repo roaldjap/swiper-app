@@ -1,8 +1,8 @@
-.share-hero
-  background-image: url("../img/hero-share.jpg")
-  background-size: contain
+.register-hero
+  background-image: url("../img/hero-register.jpg")
+  background-size: cover
   background-attachment: fixed
-  background-position: top center
+  background-position: bottom center
   
   h1
     font-size: 32px
@@ -20,31 +20,8 @@
       font-size: 24px
       line-height: 32px
       max-width: 400px
-      
-.pricing-hero
-  background-image: url("../img/9-Pricing-BG.jpg")
-  background-size: cover
-  background-attachment: fixed
-  background-position: top center
 
-  h1
-    font-size: 32px
-    line-height: 40px
-    color: white
-    text-align: center
-    display: block
-    width: 100%
-    max-width: 550px
-    margin: 250px auto 30px
-    padding: 10px 30px
-    border-radius: 30px
-
-    @media screen and (max-width: 540px)
-      font-size: 24px
-      line-height: 32px
-      max-width: 400px
-      
-.share-main
+.register-main
   background-color: white
   padding: 50px 0 40px
   
@@ -66,9 +43,23 @@
   p
     margin-bottom: 30px
 
+    &.required-note
+      margin: 0
+      font-style: italic
+      color: lighten($primary-grey, 30%)
+      font-size: 13px
+
+      .required-mark
+        font-size: initial
+        font-style: normal
+        margin: 0
+
   form
     color: $primary-grey
     
+    .required-mark
+      color: red
+
     label
       font-size: 20px
       font-weight: normal
@@ -78,6 +69,33 @@
       
       @media screen and (max-width: 767px)
         margin-bottom: 0
+
+      .checklabel
+        padding-left: 25px
+        margin-left: -4px
+        font-size: 16px
+        
+      input[type="checkbox"]
+        vertical-align: middle
+        margin-left: 4px
+        margin-top: 1px
+        opacity: 0
+        cursor: pointer
+
+      input[type="checkbox"]+label
+        cursor: pointer
+
+      input[type="checkbox"]+label:before
+        content: ""
+        display: inline-block
+        width: 29px
+        height: 26px
+        margin: -3px 8px 0 -38px
+        vertical-align: middle
+        background: url('../img/check-sprite.png') left top no-repeat
+
+    input[type="checkbox"]:checked+label:before
+      background: url('../img/check-sprite.png') -35px top no-repeat
         
     .form-control
       margin-bottom: 10px
@@ -87,7 +105,7 @@
         outline: 0
         -webkit-box-shadow: inset 0 1px 1px rgba($primary-red,.075),0 0 8px rgba($primary-red,.6)
         box-shadow: inset 0 1px 1px rgba($primary-red,.075),0 0 8px rgba($primary-red,.6)
-    
+
     .submit-group
       padding-left: 15px
       padding-right: 15px
@@ -166,9 +184,6 @@
       display: inline-block
       margin-right: 20px
 
-      
-.yellow-heading
-  color: $primary !important
-  
-.yellow-dark-heading
-  color: $primary-dark !important
+// TagsInput Overrides
+div.tagsinput
+  width: 100% !important
