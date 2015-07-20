@@ -221,7 +221,13 @@
                     </div>
                     <div class="col-sm-6 form-group">
                       <label for="ad-spend">Ad Spend</label>
-                      <input type="text" class="form-control" id="ad-spend"/>
+                      <select class="form-control" id="ad-spend">
+                        <option>-------</option>
+                        <option>Less than $500</option>
+                        <option>$500-$1000</option>
+                        <option>$1000-$2500</option>
+                        <option>$2500-$5000</option>
+                      </select>
                       <div class="form-group">
                         <input type="checkbox" class="check" id="sell-developers" value="sell-developers" ><label class="checklabel" for="sell-developers">Sell to Developers</label>
                       </div>
@@ -294,19 +300,218 @@
               </div>
             </div>
 
-            <!-- Terms & Conditions -->
             <hr>
+
+            <!-- Billing Details -->
             <div class="container">
               <div class="form-group">
-                    <input type="checkbox" class="check" id="sell-consumers" value="pull-contact-to-billing" ><label class="checklabel" for="sell-consumers">Pull Contact Details into Billing Details</label>
-              </div>
-              <div class="form-group">
-                    <input type="checkbox" class="check" id="sell-consumers" value="agree-terms" ><label class="checklabel" for="sell-consumers">I agree to terms and conditions</label>
+                    <input type="checkbox" class="check" id="pull-contact" value="pull-contact-to-billing" ><label class="checklabel" for="pull-contact">Pull Contact Details into Billing Details</label>
               </div>
             </div>
+            
+            <div class="pay-wrapper">
+                <h2 class="form-head">Billing Details</h2>
+                <div class="well">
+                    <p class="required-note"> <span class="required-mark">*</span> required fields </p>
+                    <div class="form-group">
+                      <label for="customer-id">Company Name</label>
+                      <input type="text" class="form-control" id="bill-company-name" value="xxxxxxxxxxxxxxx"/>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <label for="bill-street-1">Street 1  <span class="required-mark">*</span></label>
+                          <input type="text" class="form-control" id="bill-street-1"/>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="bill-street-2">Street 2</label>
+                          <input type="text" class="form-control" id="bill-street-2"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <label for="bill-city">City</label>
+                          <input type="text" class="form-control" id="bill-city"/>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="bill-suburb">Suburb</label>
+                          <input type="text" class="form-control" id="bill-suburb"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <label for="bill-state">State</label>
+                          <select class="form-control" id="bill-state">
+                            <option>------</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="bill-post-code">Post Code <span class="required-mark">*</span></label>
+                          <input type="text" class="form-control" id="bill-post-code"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="bill-country">Country</label>
+                      <select class="form-control" id="bill-country">
+                        <option>------</option>
+                      </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <label for="bill-industry">Industry</label>
+                          <select class="form-control" id="bill-industry">
+                            <option>Engineering</option>
+                            <option>Technology</option>
+                            <option>Fashion</option>
+                          </select>
+
+                          <div class="form-group">
+                            <input type="checkbox" class="check" id="sell-consumers" value="bill-sell-consumers" ><label class="checklabel" for="bill-sell-consumers">Sell to Consumers</label>
+                          </div>
+                          <div class="form-group">
+                            <input type="checkbox" class="check" id="sell-enterprise" value="bill-sell-enterprise" ><label class="checklabel" for="bill-sell-enterprise">Sell to Enterprise</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="bill-ad-spend">Ad Spend</label>
+                          <select class="form-control" id="bill-ad-spend">
+                            <option>-------</option>
+                            <option>Less than $500</option>
+                            <option>$500-$1000</option>
+                            <option>$1000-$2500</option>
+                            <option>$2500-$5000</option>
+                          </select>
+                          <div class="form-group">
+                            <input type="checkbox" class="check" id="bill-sell-developers" value="bill-sell-developers" ><label class="checklabel" for="bill-sell-developers">Sell to Developers</label>
+                          </div>
+                          <div class="form-group">
+                            <input type="checkbox" class="check" id="bill-sell-smb" value="bill-sell-smb" ><label class="checklabel" for="bill-sell-smb">Sell to SMB</label>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="bill-description">Description</label>
+                      <textarea class="form-control" id="bill-description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="keywords">Keywords</label>
+                       <textarea class="form-control" id="bill-keywords" placeholder="Add a Keyword..."></textarea>
+                    </div> 
+                </div>
+
+                <!-- Credit Card Details -->
+                <h2 class="form-head">Credit Card Details</h2>
+                <p>Only appplicable if the selected product is not Free. Otherwise, this will be ignored</p>
+                <div class="well">
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <div class="form-group">
+                            <input type="checkbox" class="check" id="sell-consumers" value="bill-to-credit-card" ><label class="checklabel" for="bill-to-credit-card">Bill to Credit Card</label>
+                          </div>
+
+                          <label for="cc-product-type">Product Type <span class="required-mark">*</span></label>
+                          <select class="form-control" id="cc-product-type">
+                            <option>------</option>
+                            <option>Standard</option>
+                          </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <label for="cc-first-name">First Name <span class="required-mark">*</span></label>
+                          <input type="text" class="form-control" id="cc-first-name"/>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="cc-last-name">Last Name <span class="required-mark">*</span></label>
+                          <input type="text" class="form-control" id="cc-last-name"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-9 form-group">
+                          <label for="cc-number">Credit Card No. <span class="required-mark">*</span></label>
+                          <input type="text" class="form-control" id="cc-number"/>
+                        </div>
+                        <div class="col-sm-3 form-group">
+                          <label for="cc-code">Code <span class="required-mark">*</span></label>
+                          <input type="text" class="form-control" id="cc-code"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <label for="cc-payment-mode">Payment Mode <span class="required-mark">*</span></label>
+                          <select class="form-control" id="cc-payment-mode">
+                            <option>------</option>
+                            <option>Monthly</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="cc-card-type">Card Type <span class="required-mark">*</span></label>
+                          <input type="text" class="form-control" id="cc-card-type"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <label for="cc-month">Month <span class="required-mark">*</span></label>
+                          <select class="form-control" id="bill-industry">
+                            <option>January</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="cc-year">Year <span class="required-mark">*</span></label>
+                          <select class="form-control" id="bill-ad-spend">
+                            <option>2013</option>
+                          </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="cc-billing-email">Billing Email <span class="required-mark">*</span></label>
+                      <input type="text" class="form-control" id="cc-billing-email"/>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Terms and Conditions -->
+            <div class="container">
+              <div class="form-group">
+                    <input type="checkbox" class="check" id="agree-terms" value="agree-terms" ><label class="checklabel" for="agree-terms">I agree to <a data-toggle="modal" data-target="#terms-and-conditions">Terms and Conditions</a></label>
+              </div>
+            </div>
+              
+            <!-- Submit Button -->
             <div class="form-group submit-group">
                 <button type="submit" class="btn submit-btn">Submit</button>
             </div>
+            
+            <!-- Registration Modal: Terms and Conditions -->
+            <div class="modal fade" id="terms-and-conditions">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Terms and Conditions</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>You agree to have us charge your card on a monthly basis to showcase your business and its offers on Swiper. You may cancel this monthly charge at anytime at no penalty to you by contacting customer support via email at <a href="mailto:customersupport@swiperapp.com" target="_blank">customersupport@swiperapp.com</a>. No refunds will be provided but you will not be charged any future amount.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">I Agree</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
 
             </form>
             
@@ -338,7 +543,13 @@
     <script>
       $(document).ready(function(){
           $("#keywords").tagsInput();
+          $("#bill-keywords").tagsInput();
           $(".tagsinput").addClass('form-control');
+
+          // Pull Contact Details
+          $("#pull-contact").on("click", function(){
+              $(".pay-wrapper").toggle();
+          });
       })
     </script>
 

@@ -1521,6 +1521,10 @@ body .mobile-b-access .mob-copyright p {
   margin-right: 20px;
 }
 
+.pay-wrapper {
+  display: none;
+}
+
 div.tagsinput {
   width: 100% !important;
 }
