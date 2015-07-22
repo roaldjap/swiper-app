@@ -241,8 +241,9 @@ body {
               padding-right: 0; } }
           @media screen and (max-width: 768px) {
             body .home-main .action .action-wrapper h2 {
-              font-size: 20px;
-              line-height: 30px; } }
+              margin-top: 10px;
+              font-size: 18px;
+              line-height: 26px; } }
         body .home-main .action .action-wrapper .input-group {
           margin-top: 40px;
           font-family: 'Varela Round', sans-serif; }
