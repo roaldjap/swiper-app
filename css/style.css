@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Vagrounded Black";
+  src: url("../fonts/vagroundedstd-black.otf");
+}
 html, body {
   width: 100%;
   height: 100%;
@@ -85,6 +89,9 @@ body .slick .slick-list .slick-track .slider-3 {
 }
 body .slick .slick-list .slick-track .slider-4 {
   background-image: url("../img/slider-4.jpg");
+}
+body .slick .slick-list .slick-track .slider-5 {
+  background-image: url("../img/slider-5.jpg");
 }
 body .bg-carousel-overlay {
   width: 100%;
@@ -278,20 +285,22 @@ body .home-main .action .action-wrapper h1, body .home-main .action .action-wrap
   display: block;
 }
 body .home-main .action .action-wrapper h1 {
-  font-size: 42px;
-  line-height: 55px;
+  font-family: "Vagrounded Black", sans-serif;
+  vertical-align: baseline;
+  font-size: 6.2em;
+  line-height: 1em;
   margin-top: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   body .home-main .action .action-wrapper h1 {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 4.2em;
+    line-height: 1em;
   }
 }
 @media screen and (max-width: 480px) {
   body .home-main .action .action-wrapper h1 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 3.9em;
+    line-height: 1em;
   }
 }
 body .home-main .action .action-wrapper h2 {
