@@ -247,12 +247,39 @@ body
           width: 100%
           display: block
 
+        .rotate-word
+          height: auto
+          max-height: 1.2em
+          width: auto
+          max-width: 500px          
+          position: relative
+          z-index: 3
+          float: left
+          color: $primary
+
+          @media screen and (max-width: 991px)
+            max-width: 350px
+
+          @media screen and (max-width: 767px)
+            max-width: 100% 
+
+          div
+            text-align: left
+            padding: 3px 0 0 2.5px
+
+          .slick-list, .slick-track
+            max-height: inherit
+
+          .slick-list
+            overflow: hidden
+
         h1
           font-family: $font-bolder
           vertical-align: baseline
           font-size: 6.2em
           line-height: 1em
           margin-top: 0
+          letter-spacing: 2px
           
           @media screen and (min-width: 768px) and (max-width: 991px)
             font-size: 4.2em
@@ -336,15 +363,15 @@ body
               border-top-left-radius: 0
               border-bottom-left-radius: 0
               border: none
-              background-color: $primary
+              background-color: $primary-red
               color: #fff
               text-transform: uppercase
               outline: none
               
               &:hover
                 z-index: 1
-                background-color: darken($primary, 15%)
-                border-color: darken($primary, 12%)
+                background-color: darken($primary-red, 15%)
+                border-color: darken($primary-red, 12%)
               
               &:focus
                 z-index: 1
@@ -572,7 +599,7 @@ body
           border-top-left-radius: 0
           border-bottom-left-radius: 0
           border: none
-          background-color: $primary
+          background-color: $primary-red
           color: #fff
           text-transform: uppercase
           outline: none
@@ -580,8 +607,8 @@ body
 
           &:hover
             z-index: 1
-            background-color: darken($primary, 15%)
-            border-color: darken($primary, 12%)
+            background-color: darken($primary-red, 15%)
+            border-color: darken($primary-red, 12%)
 
           &:focus
             z-index: 1

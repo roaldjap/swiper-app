@@ -2,7 +2,7 @@ $(document).ready(function () {
   "use strict";
   
   if ($('.slick')[0]) {
-    $('.slick').slick({
+    $('.slick, .rotate-word').slick({
       arrows: false,
       rtl: true,
       slidesToShow: 1,
@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
 
     $('.phone').slick({
-      asNavFor: '.slick',
+      asNavFor: '.slick, .rotate-word',
       rtl: true,
       slidesToShow: 1,
       slidesToScroll: 1,
