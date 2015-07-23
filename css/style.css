@@ -238,9 +238,8 @@ body {
               height: 80px; } }
           body .home-main .action .action-wrapper .rotate-word div {
             text-align: left;
-            padding: 3px 0 0 2.5px; }
-          body .home-main .action .action-wrapper .rotate-word .slick-list {
-            overflow: hidden; }
+            padding: 3px 0 0 2.5px;
+            height: 100%; }
         body .home-main .action .action-wrapper h1 {
           font-family: 'Vagrounded Black', sans-serif;
           vertical-align: baseline;
