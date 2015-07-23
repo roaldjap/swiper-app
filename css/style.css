@@ -279,6 +279,7 @@ body .home-main .action .action-wrapper h1, body .home-main .action .action-wrap
   font-family: "Varela Round", sans-serif;
   width: 100%;
   display: block;
+  font-weight: 700;
 }
 body .home-main .action .action-wrapper .rotate-word {
   height: 120px;
