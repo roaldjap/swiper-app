@@ -308,7 +308,6 @@ body .home-main .action .action-wrapper .rotate-word {
 }
 body .home-main .action .action-wrapper .rotate-word div {
   text-align: left;
-  padding: 3px 0 0 2.5px;
   height: 100%;
 }
 body .home-main .action .action-wrapper h1 {
@@ -327,8 +326,9 @@ body .home-main .action .action-wrapper h1 {
 }
 @media screen and (max-width: 480px) {
   body .home-main .action .action-wrapper h1 {
-    font-size: 3.9em;
+    font-size: 3.2em;
     line-height: 1em;
+    letter-spacing: 0;
   }
 }
 body .home-main .action .action-wrapper h2 {
