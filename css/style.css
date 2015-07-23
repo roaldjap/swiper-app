@@ -322,7 +322,7 @@ body .home-main .action .action-wrapper h1 {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   body .home-main .action .action-wrapper h1 {
-    font-size: 4.2em;
+    font-size: 3.6em;
     line-height: 1em;
   }
 }
