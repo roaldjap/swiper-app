@@ -373,7 +373,7 @@ body
               color: #fff
               text-transform: uppercase
               outline: none
-              margin: 0 10px
+              margin-left: 10px
               
               &:hover
                 z-index: 1
@@ -563,9 +563,7 @@ body
         font-size: 16px
         padding: 0 25px
         min-height: 52px
-        border-radius: 10px
-        border-top-right-radius: 0
-        border-bottom-right-radius: 0
+        border-radius: 3px
         -webkit-box-shadow: none
         box-shadow: none
         border-color: lighten($primary-grey, 20%)
@@ -580,13 +578,17 @@ body
           display: block
           float: left
           border-top-right-radius: 10px !important
+          border-top-left-radius: 10px
           border-bottom-left-radius: 0
+          border-bottom-right-radius: 0
           
         @media screen and (max-width: 480px)
           display: block
           float: left
           border-top-right-radius: 10px !important
+          border-top-left-radius: 10px
           border-bottom-left-radius: 0
+          border-bottom-right-radius: 0
           
       .input-group-btn
 
@@ -604,10 +606,8 @@ body
           font-size: 16px
           height: 52px
           padding: 14px 22px
-          margin-left: -1px
-          border-radius: 10px
-          border-top-left-radius: 0
-          border-bottom-left-radius: 0
+          margin-left: 10px
+          border-radius: 3px
           border: none
           background-color: $primary-red
           color: #fff
@@ -625,13 +625,17 @@ body
 
           @media screen and (min-width: 768px) and (max-width: 991px)
             border-top-right-radius: 0
+            border-top-left-radius: 0
             border-bottom-left-radius: 10px
+            border-bottom-right-radius: 10px
             width: 100%
             margin: -1px 0 0
 
           @media screen and (max-width: 480px)
             border-top-right-radius: 0
+            border-top-left-radius: 0
             border-bottom-left-radius: 10px
+            border-bottom-right-radius: 10px
             width: 100%
             margin: -1px 0 0
             
