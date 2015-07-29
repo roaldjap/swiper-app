@@ -208,8 +208,12 @@ body
       height: auto
     
     div, .hand
+      
       @media screen and (min-width: 768px)
         height: 100%
+
+    .alert
+      height: auto
       
     .action-container
       padding: 0 15px
@@ -240,7 +244,10 @@ body
       
       .action-wrapper
         height: auto
-      
+        
+        div
+          height: auto
+        
         h1, h2
           color: #fff
           font-family: $font-main
@@ -403,11 +410,11 @@ body
       margin-right: -15px
       
       .phone
-        height: 184px
+        height: 200px
         width: 157px
         position: absolute
         background-color: transparent
-        bottom: 209px
+        bottom: 195px
         left: 66px
         z-index: 3
           
@@ -433,40 +440,40 @@ body
           right: auto
           
         @media screen and (min-width: 1200px)
-          bottom: 238px
+          bottom: 218px
           left: 75px
-          height: 209px
+          height: 229px
           width: 179px
             
         @media screen and (min-width: 1367px) and (min-height: 769px)
-          height: 272px
+          height: 297px
           width: 233px
-          bottom: 311px
-          left: 98px
+          bottom: 289px
+          left: 99px
           
         @media screen and (min-width: 768px) and (max-width: 991px)
-          height: 169px
+          height: 186px
           width: 146px
-          bottom: 195px
+          bottom: 181px
           left: 61px
           
         @media screen and (min-width: 768px) and (max-width: 1199px) and (orientation: portrait)
-          height: 222px
+          height: 244px
           width: 191px
-          bottom: 254px
+          bottom: 235px
           left: 80px
           
         @media screen and (max-width: 767px)
-          bottom: 209px
+          bottom: 192px
           left: 50%
           margin-left: -80px
-          height: 180px
+          height: 199px
           width: 156px
           
         @media screen and (height: 768px) and (width: 1024px)
-          height: 203px
+          height: 218px
           width: 171px
-          bottom: 224px
+          bottom: 212px
           left: 72px
       
       & > img
