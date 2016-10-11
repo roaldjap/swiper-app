@@ -13,7 +13,7 @@
 
   <!-- Bootstrap -->
   <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-  
+
   <!-- Slick.js -->
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
@@ -56,10 +56,10 @@
           </li>
         </ul>
       </div>
-      
+
     </div>
   </nav>
-  
+
   <div class="col-xs-6 row-offcanvas-right visible-xs sidebar-offcanvas">
     <div class="row">
       <div class="close-nav">
@@ -133,7 +133,7 @@
                     </span>
                   </div>
                 </form>
-                <div class="alert alert-success alert-dismissible fade in" role="alert">
+                <div class="alert alert-success alert-dismissible fade" role="alert">
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                   Thanks for signing up! You will receive an email shortly.
                 </div>
@@ -144,9 +144,9 @@
         </div>
         <div class="col-md-5 col-sm-6 hand-container">
           <article class="hand">
-            
+
             <img src="img/hand.png" alt="Hand with iPhone">
-             
+
             <!-- Wrapper for slides -->
             <div class="phone" dir="rtl">
               <div class="item active">
@@ -162,14 +162,14 @@
                 <img src="img/phone-slide-4.jpg" alt="phone image 4">
               </div>
             </div>
-              
+
           </article>
         </div>
       </div>
     </div>
-    
+
   </section>
-  
+
   <footer class="home-footer hidden-xs">
     <div class="container-fluid footer-nav">
       <ul class="clearfix">
@@ -183,7 +183,7 @@
       </ul>
     </div>
   </footer>
-  
+
   <section class="signup-mobile visible-xs">
 
     <div class="container">
@@ -197,7 +197,7 @@
               </span>
             </div>
           </form>
-          <div class="alert alert-success alert-dismissible fade in" role="alert">
+          <div class="alert alert-success alert-dismissible fade" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             Thanks for signing up! You will receive an email shortly.
           </div>
@@ -206,9 +206,9 @@
     </div>
 
   </section>
-  
+
   <section class="mobile-b-access visible-xs">
-   
+
     <div class="container">
      <div class="row">
        <div class="col-xs-12">
@@ -220,10 +220,10 @@
        </div>
      </div>
    </div>
-    
+
   </section>
 
-  
+
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
